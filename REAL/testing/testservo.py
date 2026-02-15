@@ -13,7 +13,7 @@ servo1 = Servo(18, pin_factory=factory)
 servo2 = Servo(13, pin_factory=factory)
 servo3 = Servo(12, pin_factory=factory)
 
-def slow_sweep(start=-1.0, end=1.0, step=0.2, delay=1):
+def slow_sweep(start=-1.0, end=-1.0, step=0.2, delay=1):
     """Moves the servo slowly from start to end position."""
     curr = start
     print(f"Sweeping from {start} to {end}...")

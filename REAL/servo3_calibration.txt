@@ -1,0 +1,7 @@
+Servo 3 (GPIO 12):
+7mL_POSITION = -1.0
+3mL_POSITION = 1.0
+USABLE_VOLUME = 4.0mL
+
+The code already handles this range!
+It maps servo -1.0 to 1.0 → 7mL to 3mL

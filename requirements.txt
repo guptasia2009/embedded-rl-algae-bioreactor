@@ -7,7 +7,10 @@ matplotlib>=3.7
 pandas>=2.0
 godirect
 bleak
-
+rpi_ws281x # sudo pip3 install rpi_ws281x --break-system-packages
+gpiozero
+pigpio
 
 #venv\Scripts\Activate.ps1
+#source venv/bin/activate
 #pip install -r requirements.txt

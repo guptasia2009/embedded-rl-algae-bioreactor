@@ -1,0 +1,8 @@
+2026-02-16T16:37:11.930289 - Servos initialized
+2026-02-16T16:37:22.993270 - DO sensors initialized: None
+2026-02-16T16:37:22.995855 - All LEDs cleared
+2026-02-16T16:37:22.996062 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-16T16:38:08.196491 - All LEDs cleared
+2026-02-16T16:38:08.197865 - Servos detached
+2026-02-16T16:38:08.198297 - DO sensors closed
+2026-02-16T16:38:08.201300 - Servos closed

@@ -3,11 +3,12 @@ DO Sensor Reader
 """
 
 from logger import log
-
+import time
 try:
     from gdx import gdx as gdx_module
     GDX_AVAILABLE = True
 except ImportError:
+    gdx_module = None
     GDX_AVAILABLE = False
 
 # Global sensor object
@@ -16,10 +17,11 @@ gdx = None
 # Initialize sensors
 if GDX_AVAILABLE:
     try:
-        gdx = gdx_module()
+        gdx = gdx_module.gdx()
         gdx.open(connection='usb')
         gdx.select_sensors()
-        gdx.start()
+        gdx.start(period=1000)
+        time.sleep(4)
         sensor_info = gdx.enabled_sensor_info()
         log(f"DO sensors initialized: {sensor_info}")
     except Exception as e:

@@ -1,0 +1,12 @@
+2026-02-16T16:30:36.430627 - Servos initialized
+2026-02-16T16:30:36.511608 - DO sensors initialized: None
+2026-02-16T16:30:36.514616 - All LEDs cleared
+2026-02-16T16:30:36.514849 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-16T16:31:38.915309 - WARNING: No DO readings received
+2026-02-16T16:31:38.929844 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T16:31:38.936109 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T16:31:38.942301 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T16:32:14.705568 - All LEDs cleared
+2026-02-16T16:32:14.706307 - Servos detached
+2026-02-16T16:32:14.706568 - DO sensors closed
+2026-02-16T16:32:14.708076 - Servos closed

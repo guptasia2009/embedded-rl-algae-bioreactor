@@ -19,10 +19,9 @@ LED_GPIO_PIN = 19
 LED_BRIGHTNESS = 128
 
 # LED positions
-REACTOR_1_LEDS = [57, 58, 59]
-REACTOR_2_LEDS = [51, 52, 53]
-REACTOR_3_LEDS = [45, 46, 47]
-
+REACTOR_1_LEDS = [26, 27, 28]
+REACTOR_2_LEDS = [32, 33, 34]
+REACTOR_3_LEDS = [38, 39, 40]
 NUM_REACTORS = 3
 
 # ============================================================================
@@ -54,7 +53,7 @@ REACTOR_DEPTH = 0.2
 Q_MIN = 0.05
 
 X_INIT = 1.0
-S_INIT = 5.0
+S_INIT = 0.0
 I_INIT = 60.0
 
 DO_YIELD = 1.0

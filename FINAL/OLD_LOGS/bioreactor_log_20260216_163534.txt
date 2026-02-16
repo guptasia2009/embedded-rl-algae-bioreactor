@@ -1,0 +1,7 @@
+2026-02-16T16:35:34.412997 - Servos initialized
+2026-02-16T16:35:34.424426 - ERROR: DO sensors failed to initialize,gdx.open() got an unexpected keyword argument 'device_list'
+2026-02-16T16:35:34.426352 - All LEDs cleared
+2026-02-16T16:35:34.426509 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-16T16:35:57.419693 - All LEDs cleared
+2026-02-16T16:35:57.421278 - Servos detached
+2026-02-16T16:35:57.424886 - Servos closed

@@ -10,10 +10,10 @@ from stable_baselines3 import PPO
 
 import config
 from logger import log as write_log
-from servo_controller import dispense, reset_servo, detach_all, cleanup
-from led_controller import set_leds, clear_all_leds
-from do_sensor_reader import read_do, cleanup_do
-from state_estimator import update_state, get_state
+from servo_controller import *
+from led_controller import *
+from do_sensor_reader import *
+from state_estimator import *
 
 
 def create_files():
@@ -178,5 +178,6 @@ def run_bioreactor(model_path="bioreactor_model.zip", duration_hours=120):
 
 if __name__ == "__main__":
     import sys
+    initialize_leds()
     model_path = sys.argv[1] if len(sys.argv) > 1 else "bioreactor_model.zip"
     run_bioreactor(model_path=model_path, duration_hours=120)

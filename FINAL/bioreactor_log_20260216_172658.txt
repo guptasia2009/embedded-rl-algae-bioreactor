@@ -1,0 +1,110 @@
+2026-02-16T17:26:58.054574 - Servos initialized
+2026-02-16T17:27:05.994429 - DO sensors initialized: ['DO Concentration (mg/L)', 'DO Concentration (mg/L)', 'DO Concentration (mg/L)']
+2026-02-16T17:27:05.996779 - All LEDs cleared
+2026-02-16T17:27:05.996968 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-16T17:28:08.447464 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:28:08.457336 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:28:08.464355 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:29:08.473679 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:29:08.480352 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:29:08.486515 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:30:08.495572 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:30:08.502014 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:30:08.508302 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:31:08.517058 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:31:08.523488 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:31:08.529751 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:32:08.538517 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:32:08.544851 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:32:08.550994 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:33:08.559713 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:33:08.565904 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:33:08.572132 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:34:08.580885 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:34:08.587130 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:34:08.592955 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:35:08.601577 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:35:08.607692 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:35:08.613883 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:36:08.623292 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:36:08.629368 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:36:08.634834 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:37:08.643667 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:37:08.649892 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:37:08.656153 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:38:08.664896 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:38:08.671174 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:38:08.677345 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:39:08.686101 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:39:08.692576 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:39:08.698766 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:40:08.707587 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:40:08.713790 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:40:08.720045 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:41:08.728704 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:41:08.734942 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:41:08.740779 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:42:08.749371 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:42:08.755638 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:42:08.761865 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:43:08.770594 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:43:08.776865 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:43:08.783748 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:44:08.793220 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:44:08.799768 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:44:08.806020 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:45:08.815721 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:45:08.822071 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:45:08.828877 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:46:08.837561 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:46:08.843860 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:46:08.850027 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:47:08.859934 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:47:08.866249 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:47:08.873912 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:48:08.883562 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:48:08.890332 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:48:08.896483 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:49:08.905275 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:49:08.911510 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:49:08.917744 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:50:08.926517 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:50:08.932811 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:50:08.939087 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:51:08.950447 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:51:08.957757 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:51:08.964045 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:52:08.972694 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:52:08.978937 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:52:08.985243 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:53:08.993935 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:53:09.000164 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:53:09.006214 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:54:09.014981 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:54:09.021338 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:54:09.027481 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:55:09.037039 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:55:09.043731 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:55:09.049922 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:56:09.059304 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:56:09.066316 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:56:09.073403 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:57:09.577627 - Servo 1 reset to 7mL
+2026-02-16T17:57:09.584842 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:57:10.087301 - Servo 2 reset to 7mL
+2026-02-16T17:57:10.094431 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:57:10.596836 - Servo 3 reset to 7mL
+2026-02-16T17:57:10.604133 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:58:10.618131 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:58:10.628550 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:58:10.637401 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T17:59:10.649587 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T17:59:10.655922 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T17:59:10.662144 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T18:00:10.670877 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T18:00:10.677143 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T18:00:10.683390 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T18:00:19.624345 - All LEDs cleared
+2026-02-16T18:00:19.625386 - Servos detached
+2026-02-16T18:00:19.687565 - DO sensors closed
+2026-02-16T18:00:19.689573 - Servos closed

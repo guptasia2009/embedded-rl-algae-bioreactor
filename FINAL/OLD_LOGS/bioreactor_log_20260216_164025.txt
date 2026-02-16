@@ -1,0 +1,13 @@
+Bioreactor Log - 20260216_164025
+
+2026-02-16T16:40:25.617553 - Experiment started
+2026-02-16T16:40:42.612079 - Stopped by user
+2026-02-16T16:40:42.612446 - Shutting down
+2026-02-16T16:40:42.618411 - Shutdown complete
+2026-02-16T16:41:08.111141 - Servos initialized
+2026-02-16T16:41:13.204978 - ERROR: DO sensors failed to initialize,name 'time' is not defined
+2026-02-16T16:41:13.250963 - All LEDs cleared
+2026-02-16T16:41:13.251340 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-16T16:42:09.462833 - All LEDs cleared
+2026-02-16T16:42:09.463738 - Servos detached
+2026-02-16T16:42:09.464925 - Servos closed

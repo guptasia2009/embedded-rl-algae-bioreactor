@@ -1,0 +1,9 @@
+Bioreactor Log - 20260216_162214
+
+2026-02-16T16:22:14.836431 - Experiment started
+2026-02-16T16:23:14.837464 - Control at 0.0hrs
+2026-02-16T16:23:14.860144 - Shutting down
+2026-02-16T16:23:14.864050 - Shutdown complete
+2026-02-16T16:25:44.493765 - DO sensors initialized: ['DO Concentration (mg/L)', 'DO Concentration (mg/L)', 'DO Concentration (mg/L)', 'DO Saturation (%)', 'Temperature (°C)']
+2026-02-16T16:26:03.212050 - Servos initialized
+2026-02-16T16:26:03.279419 - DO sensors initialized: None

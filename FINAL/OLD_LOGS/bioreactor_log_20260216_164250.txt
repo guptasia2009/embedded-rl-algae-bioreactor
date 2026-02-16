@@ -1,0 +1,10 @@
+2026-02-16T16:42:50.283027 - Servos initialized
+2026-02-16T16:42:56.252313 - ERROR: DO sensors failed to initialize,name 'time' is not defined
+2026-02-16T16:42:56.255649 - All LEDs cleared
+2026-02-16T16:42:56.255941 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-16T16:43:58.706480 - LEDs [26, 27, 28] set to intensity 255
+2026-02-16T16:43:58.714186 - LEDs [32, 33, 34] set to intensity 255
+2026-02-16T16:43:58.719535 - LEDs [38, 39, 40] set to intensity 255
+2026-02-16T16:44:01.974913 - All LEDs cleared
+2026-02-16T16:44:01.976063 - Servos detached
+2026-02-16T16:44:01.977279 - Servos closed

@@ -1,13 +1,49 @@
 #!/usr/bin/env python3
+
 """
 LED Controller Module
-Simple function-based control for individual LEDs or groups
+Controls individual LEDs and groups
 """
 
 from rpi_ws281x import PixelStrip, Color
+from datetime import datetime
+from pathlib import Path
 
-# Global LED strip object (initialized once)
+# Global LED strip object
 _strip = None
+_log_file = None
+
+def _get_log_file():
+    """
+    Get or create log file
+    """
+    global _log_file
+    
+    if _log_file is not None:
+        return _log_file
+    
+    # Check if main has already created a log file
+    existing_logs = sorted(Path('.').glob('bioreactor_log_*.csv'))
+    
+    if existing_logs:
+        # Use the most recent log file
+        _log_file = str(existing_logs[-1])
+    else:
+        # Create new log file
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        _log_file = f"bioreactor_log_{timestamp}.csv"
+    
+    return _log_file
+
+def _log(message):
+    """
+    Write message to log file
+    """
+    timestamp = datetime.now().isoformat()
+    log_file = _get_log_file()
+    
+    with open(log_file, 'a') as f:
+        f.write(f"{timestamp},{message}\n")
 
 def initialize_leds(total_leds=60, gpio_pin=19, brightness=128):
     """
@@ -25,7 +61,7 @@ def initialize_leds(total_leds=60, gpio_pin=19, brightness=128):
     _strip = PixelStrip(total_leds, gpio_pin, 800000, 10, False, brightness, 1)
     _strip.begin()
     clear_all_leds()
-    print(f"✓ LED strip initialized: {total_leds} LEDs on GPIO {gpio_pin}")
+    _log(f"INFO,LED strip initialized,{total_leds} LEDs on GPIO {gpio_pin}")
     return _strip
 
 def set_leds(led_list, intensity):
@@ -44,6 +80,7 @@ def set_leds(led_list, intensity):
     """
     global _strip
     if _strip is None:
+        _log("ERROR,LED strip not initialized")
         raise RuntimeError("LED strip not initialized. Call initialize_leds() first.")
     
     # Handle single LED
@@ -59,21 +96,7 @@ def set_leds(led_list, intensity):
             _strip.setPixelColor(led_num, color)
     
     _strip.show()
-
-def set_reactor_leds(reactor_num, led_indices, intensity):
-    """
-    Set LEDs for a specific reactor
-    
-    Args:
-        reactor_num: Reactor number (1, 2, or 3) - just for logging
-        led_indices: List of LED indices for this reactor
-        intensity: Brightness 0-255
-    
-    Example:
-        set_reactor_leds(1, [57, 58, 59], 255)
-        set_reactor_leds(2, [51, 52, 53], 128)
-    """
-    set_leds(led_indices, intensity)
+    _log(f"LED_SET,LEDs {led_list},intensity {intensity}")
 
 def clear_all_leds():
     """Turn off all LEDs"""
@@ -84,6 +107,7 @@ def clear_all_leds():
     for i in range(_strip.numPixels()):
         _strip.setPixelColor(i, Color(0, 0, 0))
     _strip.show()
+    _log("INFO,All LEDs cleared")
 
 def clear_leds(led_list):
     """
@@ -97,81 +121,3 @@ def clear_leds(led_list):
 def get_strip():
     """Get the global LED strip object"""
     return _strip
-
-
-# Example usage
-if __name__ == "__main__":
-    import time
-    
-    print("LED Controller Test")
-    print("=" * 60)
-    
-    # Initialize
-    initialize_leds(total_leds=60, gpio_pin=19)
-    
-    # Define reactor LED positions
-    # With 3 LEDs on, 3 LEDs gap between reactors
-    REACTOR_1_LEDS = [55, 56, 57]  # Last 3 LEDs
-    REACTOR_2_LEDS = [50, 51, 52]  # 3 LEDs gap, then these 3
-    REACTOR_3_LEDS = [44, 45, 46]  # 3 LEDs gap, then these 3
-    REACTOR_4_LEDS = [37, 38, 39]
-    REACTOR_5_LEDS = [31, 32, 33]
-    REACTOR_6_LEDS = [25, 26, 27]
-
-    print("\nReactor LED Configuration:")
-    print(f"  Reactor 1: LEDs {REACTOR_1_LEDS}")
-    print(f"  Reactor 2: LEDs {REACTOR_2_LEDS}")
-    print(f"  Reactor 3: LEDs {REACTOR_3_LEDS}")
-    
-    print("\nRunning tests...\n")
-    
-    try:
-        '''
-        # Test 1: Turn on each reactor individually
-        print("Test 1: Individual reactors at different intensities")
-        set_reactor_leds(1, REACTOR_1_LEDS, 255)
-        print("  Reactor 1: Full brightness")
-        time.sleep(1)
-        
-        set_reactor_leds(2, REACTOR_2_LEDS, 128)
-        print("  Reactor 2: Half brightness")
-        time.sleep(1)
-        
-        set_reactor_leds(3, REACTOR_3_LEDS, 64)
-        print("  Reactor 3: Quarter brightness")
-        time.sleep(2)
-        '''
-        # Test 2: All at once
-        print("\nTest 2: All reactors at full brightness")
-        set_leds(REACTOR_1_LEDS, 255)
-        set_leds(REACTOR_2_LEDS, 255)
-        set_leds(REACTOR_3_LEDS, 255)
-        set_leds(REACTOR_4_LEDS, 255)
-        set_leds(REACTOR_5_LEDS, 255)
-        set_leds(REACTOR_6_LEDS, 255)
-        time.sleep(10)
-        '''
-        # Test 3: Ramp up
-        print("\nTest 3: Ramping up all reactors")
-        for intensity in range(0, 256, 32):
-            set_leds(REACTOR_1_LEDS + REACTOR_2_LEDS + REACTOR_3_LEDS, intensity)
-            time.sleep(0.3)
-        time.sleep(1)
-        
-        # Test 4: Individual control
-        print("\nTest 4: Independent control")
-        for i in range(5):
-            set_leds(REACTOR_1_LEDS, 255 if i % 2 == 0 else 0)
-            set_leds(REACTOR_2_LEDS, 128)
-            set_leds(REACTOR_3_LEDS, 255 if i % 2 == 1 else 0)
-            time.sleep(0.5)
-        '''
-        print("\nTests complete!")
-        
-    except KeyboardInterrupt:
-        print("\nInterrupted by user")
-    
-    finally:
-        print("Clearing all LEDs...")
-        clear_all_leds()
-        print("Done!")

@@ -9,11 +9,6 @@ All hardware settings, biological constants, and control parameters
 
 # Servo Configuration
 SERVO_PINS = [18, 13, 12]  # GPIO pins for servos (BCM numbering)
-SERVO_7ML_POSITION = -1.0  # Servo value when plunger at 7mL mark (full)
-SERVO_3ML_POSITION = 1.0   # Servo value when plunger at 3mL mark (empty)
-SYRINGE_MIN_ML = 3.0       # Minimum mL mark servo reaches
-SYRINGE_MAX_ML = 7.0       # Maximum mL mark servo reaches
-SYRINGE_USABLE_VOLUME = SYRINGE_MAX_ML - SYRINGE_MIN_ML  # 4mL usable
 
 # LED Configuration
 TOTAL_LEDS = 60            # Total LEDs on strip

@@ -1,119 +1,92 @@
 """
-DO Sensor Reader Module
-Reads from 3 Vernier GO Direct DO sensors
+State Estimator Module
+It estimates bioreactor state from sensor readings
+State: [nutrient_est, DO, DO_trend, light_level]
 """
 
+import numpy as np
 import config
 
-try:
-    from gdx import gdx
-    GDX_AVAILABLE = True
-except ImportError:
-    print("WARNING: gdx module not found - running in simulation mode")
-    GDX_AVAILABLE = False
+# State tracking for each reactor
+nutrient_estimates = [config.S_INIT, config.S_INIT, config.S_INIT]
+biomass_estimates = [config.X_INIT, config.X_INIT, config.X_INIT]
+do_histories = [[], [], []]
+last_dos = [None, None, None]
+current_lights = [config.I_INIT, config.I_INIT, config.I_INIT]
+
+def update_state(reactor_num, do_reading, nutrient_added, light_level):
+    """
+    Update state for a reactor
+    
+    Args:
+        reactor_num: 1, 2, or 3
+        do_reading: Current DO in mg/L (or None)
+        nutrient_added: mL added
+        light_level: LED intensity 0-255
+    """
+    i = reactor_num - 1  # Convert to 0-indexed
+    
+    # Update light
+    current_lights[i] = light_level
+    
+    # Update DO history
+    if do_reading is not None:
+        do_histories[i].append(do_reading)
+        if len(do_histories[i]) > config.DO_HISTORY_LENGTH:
+            do_histories[i].pop(0)
+        last_dos[i] = do_reading
+    
+    # Estimate biomass from DO production
+    if len(do_histories[i]) >= 2:
+        recent_do = do_histories[i][-1]
+        older_do = do_histories[i][0] if len(do_histories[i]) < 10 else do_histories[i][-10]
+        do_change = recent_do - older_do
+        
+        if do_change > 0:
+            biomass_estimates[i] *= (1.0 + do_change * 0.01)
+    
+    # Update nutrient (just track total added, no consumption)
+    nutrient_estimates[i] += nutrient_added
+    
+    # Slow biomass decay
+    biomass_estimates[i] *= config.BIOMASS_DECAY_RATE
 
 
-class DOSensorReader:
-    """Reads dissolved oxygen from 3 sensors"""
+def get_state(reactor_num):
+    """
+    Get state for RL model
     
-    def __init__(self):
-        """Initialize DO sensors"""
-        self.num_sensors = config.NUM_REACTORS
-        self.devices = []
-        self.simulated = not GDX_AVAILABLE
-        
-        if self.simulated:
-            print("⚠ Running in SIMULATION mode - no real DO sensors")
-            return
-        
-        print("\nInitializing DO sensors...")
-        
-        try:
-            # Open connection
-            self.gdx_device = gdx()
-            self.gdx_device.open(connection='usb')
-            
-            # Select all sensors
-            self.gdx_device.select_sensors()
-            self.gdx_device.start()
-            
-            # Get sensor info
-            sensor_info = self.gdx_device.enabled_sensor_info()
-            print(f"✓ DO sensors initialized: {sensor_info}")
-            
-        except Exception as e:
-            print(f"⚠ Error initializing DO sensors: {e}")
-            print("  Running in simulation mode")
-            self.simulated = True
+    Args:
+        reactor_num: 1, 2, or 3
     
-    def read_all(self):
-        """
-        Read DO from all sensors
-        
-        Returns:
-            list: DO readings in mg/L for each reactor [R1, R2, R3]
-                  Returns None for any failed readings
-        """
-        if self.simulated:
-            # Return simulated values
-            import numpy as np
-            return [5.0 + np.random.randn() * 0.5 for _ in range(self.num_sensors)]
-        
-        try:
-            measurements = self.gdx_device.read()
-            
-            if measurements is None or len(measurements) == 0:
-                return [None] * self.num_sensors
-            
-            # Ensure we have 3 readings
-            if len(measurements) < self.num_sensors:
-                # Pad with None if missing sensors
-                measurements = list(measurements) + [None] * (self.num_sensors - len(measurements))
-            
-            return measurements[:self.num_sensors]
-            
-        except Exception as e:
-            print(f"⚠ Error reading DO sensors: {e}")
-            return [None] * self.num_sensors
+    Returns:
+        numpy array: [nutrient_est, DO, DO_trend, light_level]
+    """
+    i = reactor_num - 1
     
-    def cleanup(self):
-        """Clean up sensor resources"""
-        if not self.simulated:
-            try:
-                self.gdx_device.stop()
-                self.gdx_device.close()
-                print("✓ DO sensors closed")
-            except:
-                pass
+    # Get DO value
+    do_value = last_dos[i] if last_dos[i] is not None else config.S_INIT
+    
+    # Calculate DO trend
+    do_trend = 0.0
+    if len(do_histories[i]) >= 2:
+        n = min(len(do_histories[i]), 10)
+        do_trend = (do_histories[i][-1] - do_histories[i][-n]) / n
+        do_trend = np.clip(do_trend, -2.0, 2.0)
+    
+    return np.array([
+        nutrient_estimates[i],
+        do_value,
+        do_trend,
+        current_lights[i]
+    ], dtype=np.float32)
 
 
-# Test code
-if __name__ == "__main__":
-    import time
-    
-    print("="*70)
-    print("DO SENSOR READER TEST")
-    print("="*70)
-    
-    try:
-        # Initialize sensor
-        sensor = DOSensorReader()
-        
-        # Read 5 times
-        print("\nReading DO sensors (5 samples)...\n")
-        for i in range(5):
-            readings = sensor.read_all()
-            print(f"Sample {i+1}:")
-            for j, reading in enumerate(readings):
-                if reading is not None:
-                    print(f"  Reactor {j+1}: {reading:.2f} mg/L")
-                else:
-                    print(f"  Reactor {j+1}: No reading")
-            time.sleep(2)
-        
-        print("\nTest complete!")
-        
-    except KeyboardInterrupt:
-        print("\nInterrupted")
-    finally:
-        sensor.cleanup()
+def get_biomass(reactor_num):
+    """Get biomass estimate for a reactor"""
+    return biomass_estimates[reactor_num - 1]
+
+
+def get_nutrient(reactor_num):
+    """Get nutrient estimate for a reactor"""
+    return nutrient_estimates[reactor_num - 1]

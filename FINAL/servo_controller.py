@@ -10,8 +10,7 @@ import os
 from gpiozero import Servo
 from gpiozero.pins.pigpio import PiGPIOFactory
 from time import sleep
-from datetime import datetime
-from pathlib import Path
+from logger import log
 from config import *
 
 # Start pigpiod if command hasn't run
@@ -30,38 +29,7 @@ servo2.value = -1.0
 servo3.value = -1.0
 sleep(1)
 
-# Setup logging
-_log_file = None
-
-def _get_log_file():
-    # Gets or creates a log file
-    global _log_file
-
-    if _log_file is not None:
-        return _log_file
-    
-    # Check if main has already created a log file
-    existing_logs = sorted(Path('.').glob('bioreactor_log_*.csv'))
-    
-    if existing_logs:
-        # Use the most recent log file
-        _log_file = str(existing_logs[-1])
-    else:
-        # Create new log file
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        _log_file = f"bioreactor_log_{timestamp}.csv"
-    
-    return _log_file
-
-def _log(message):
-    # Write message to log file
-    timestamp = datetime.now().isoformat()
-    log_file = _get_log_file()
-    
-    with open(log_file, 'a') as f:
-        f.write(f"{timestamp},{message}\n")
-
-_log("INFO,Servos initialized")
+log("Servos initialized")
 
 def dispense(servo_num, ml_amount):
     """
@@ -79,7 +47,7 @@ def dispense(servo_num, ml_amount):
     elif servo_num == 3:
         servo = servo3
     else:
-        _log(f"ERROR,Invalid servo number {servo_num}")
+        log(f"ERROR: Invalid servo number {servo_num}")
         return
     
     # Get current position
@@ -100,7 +68,7 @@ def dispense(servo_num, ml_amount):
     sleep(0.5)
     
     actual_dispensed = current_ml - new_ml
-    _log(f"DISPENSE,Servo {servo_num},{actual_dispensed:.2f}mL")
+    log(f"Servo {servo_num} dispensed {actual_dispensed:.2f}mL")
 
 def reset_servo(servo_num):
     # Reset a servo to 7mL (-1.0 position)
@@ -112,7 +80,7 @@ def reset_servo(servo_num):
         servo3.value = -1.0
     
     sleep(0.5)
-    _log(f"RESET,Servo {servo_num},7mL")
+    log(f"Servo {servo_num} reset to 7mL")
 
 def reset_all():
     # Reset all servos to 7mL
@@ -120,7 +88,7 @@ def reset_all():
     servo2.value = -1.0
     servo3.value = -1.0
     sleep(1)
-    _log("RESET,All servos,7mL")
+    log("All servos reset to 7mL")
 
 
 def detach_all():
@@ -128,7 +96,7 @@ def detach_all():
     servo1.detach()
     servo2.detach()
     servo3.detach()
-    _log("INFO,Servos detached")
+    log("Servos detached")
 
 
 def cleanup():
@@ -136,4 +104,4 @@ def cleanup():
     servo1.close()
     servo2.close()
     servo3.close()
-    _log("INFO,Servos closed")
+    log("Servos closed")

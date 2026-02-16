@@ -6,44 +6,10 @@ Controls individual LEDs and groups
 """
 
 from rpi_ws281x import PixelStrip, Color
-from datetime import datetime
-from pathlib import Path
+from logger import log
 
 # Global LED strip object
 _strip = None
-_log_file = None
-
-def _get_log_file():
-    """
-    Get or create log file
-    """
-    global _log_file
-    
-    if _log_file is not None:
-        return _log_file
-    
-    # Check if main has already created a log file
-    existing_logs = sorted(Path('.').glob('bioreactor_log_*.csv'))
-    
-    if existing_logs:
-        # Use the most recent log file
-        _log_file = str(existing_logs[-1])
-    else:
-        # Create new log file
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        _log_file = f"bioreactor_log_{timestamp}.csv"
-    
-    return _log_file
-
-def _log(message):
-    """
-    Write message to log file
-    """
-    timestamp = datetime.now().isoformat()
-    log_file = _get_log_file()
-    
-    with open(log_file, 'a') as f:
-        f.write(f"{timestamp},{message}\n")
 
 def initialize_leds(total_leds=60, gpio_pin=19, brightness=128):
     """
@@ -61,7 +27,7 @@ def initialize_leds(total_leds=60, gpio_pin=19, brightness=128):
     _strip = PixelStrip(total_leds, gpio_pin, 800000, 10, False, brightness, 1)
     _strip.begin()
     clear_all_leds()
-    _log(f"INFO,LED strip initialized,{total_leds} LEDs on GPIO {gpio_pin}")
+    log(f"LED strip initialized: {total_leds} LEDs on GPIO {gpio_pin}")
     return _strip
 
 def set_leds(led_list, intensity):
@@ -80,7 +46,7 @@ def set_leds(led_list, intensity):
     """
     global _strip
     if _strip is None:
-        _log("ERROR,LED strip not initialized")
+        log("ERROR: LED strip not initialized")
         raise RuntimeError("LED strip not initialized. Call initialize_leds() first.")
     
     # Handle single LED
@@ -96,7 +62,7 @@ def set_leds(led_list, intensity):
             _strip.setPixelColor(led_num, color)
     
     _strip.show()
-    _log(f"LED_SET,LEDs {led_list},intensity {intensity}")
+    log(f"LEDs {led_list} set to intensity {intensity}")
 
 def clear_all_leds():
     """Turn off all LEDs"""
@@ -107,7 +73,7 @@ def clear_all_leds():
     for i in range(_strip.numPixels()):
         _strip.setPixelColor(i, Color(0, 0, 0))
     _strip.show()
-    _log("INFO,All LEDs cleared")
+    log("All LEDs cleared")
 
 def clear_leds(led_list):
     """

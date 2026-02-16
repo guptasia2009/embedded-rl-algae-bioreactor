@@ -2,8 +2,7 @@
 DO Sensor Reader
 """
 
-from datetime import datetime
-from pathlib import Path
+from logger import log
 
 try:
     from gdx import gdx as gdx_module
@@ -13,35 +12,6 @@ except ImportError:
 
 # Global sensor object
 gdx = None
-_log_file = None
-
-def _get_log_file():
-    """Get or create log file"""
-    global _log_file
-    
-    if _log_file is not None:
-        return _log_file
-    
-    # Check if main has already created a log file
-    existing_logs = sorted(Path('.').glob('bioreactor_log_*.csv'))
-    
-    if existing_logs:
-        # Use the most recent log file
-        _log_file = str(existing_logs[-1])
-    else:
-        # Create new log file
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        _log_file = f"bioreactor_log_{timestamp}.csv"
-    
-    return _log_file
-
-def _log(message):
-    """Write message to log file"""
-    timestamp = datetime.now().isoformat()
-    log_file = _get_log_file()
-    
-    with open(log_file, 'a') as f:
-        f.write(f"{timestamp},{message}\n")
 
 # Initialize sensors
 if GDX_AVAILABLE:
@@ -51,12 +21,12 @@ if GDX_AVAILABLE:
         gdx.select_sensors()
         gdx.start()
         sensor_info = gdx.enabled_sensor_info()
-        _log(f"INFO,DO sensors initialized,{sensor_info}")
+        log(f"DO sensors initialized: {sensor_info}")
     except Exception as e:
-        _log(f"ERROR,DO sensors failed to initialize,{e}")
+        log(f"ERROR: DO sensors failed to initialize,{e}")
         gdx = None
 else:
-    _log("WARNING,gdx module not found,running in simulation mode")
+    log("WARNING: gdx module not found,running in simulation mode")
 
 def read_do():
     """
@@ -75,7 +45,7 @@ def read_do():
         measurements = gdx.read()
         
         if measurements is None:
-            _log("WARNING,No DO readings received")
+            log("WARNING: No DO readings received")
             return [None, None, None]
         
         # Ensure we have 3 values
@@ -85,7 +55,7 @@ def read_do():
         return measurements[:3]
         
     except Exception as e:
-        _log(f"ERROR,DO read failed,{e}")
+        log(f"ERROR: DO read failed,{e}")
         return [None, None, None]
     
 def cleanup_do():
@@ -94,6 +64,6 @@ def cleanup_do():
         try:
             gdx.stop()
             gdx.close()
-            _log("INFO,DO sensors closed")
+            log("DO sensors closed")
         except:
             pass

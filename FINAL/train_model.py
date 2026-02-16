@@ -1,10 +1,5 @@
 """
-Training Simulation for Triple Bioreactor
-Based on your original simulation but:
-- No temperature control (removed)
-- State: [nutrient, DO, DO_trend, light]
-- Action: [nutrient_rate, led_intensity]
-- Enforces 8-hour dark period
+Training Simulation for Bioreactor
 """
 
 import numpy as np
@@ -14,7 +9,7 @@ from stable_baselines3 import PPO
 from stable_baselines3.common.env_checker import check_env
 import config
 
-''' Biological Functions (from your original simulation) '''
+''' Biological Functions '''
 
 def nutrient_limitation(S, X):
     """Droop Model for nutrient limitation"""
@@ -197,7 +192,7 @@ def train_model():
     print("Creating environment...")
     env = BioreactorEnv()
     check_env(env)
-    print("✓ Environment validated\n")
+    print("Environment validated\n")
     
     # Create model
     print("Initializing PPO model...")
@@ -225,7 +220,7 @@ def train_model():
     model.save(config.MODEL_PATH)
     
     print("\n" + "="*70)
-    print("✓ TRAINING COMPLETE")
+    print("TRAINING COMPLETE")
     print("="*70)
     print(f"Model saved to: {config.MODEL_PATH}")
     
@@ -280,11 +275,7 @@ def train_model():
     print(f"  Final biomass: {env.X:.2f}")
     
     print("\n" + "="*70)
-    print("✓ MODEL READY FOR DEPLOYMENT")
-    print("="*70)
-    print(f"\nTransfer '{config.MODEL_PATH}' to your Raspberry Pi")
-    print("Then run: python3 main_bioreactor_control.py")
-    print("="*70)
+    print("MODEL READY FOR DEPLOYMENT")
 
 
 if __name__ == "__main__":

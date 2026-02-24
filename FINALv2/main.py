@@ -16,6 +16,7 @@ from collections import deque
 
 from do_sensor_reader import *
 from led_controller import *
+from servo_controller import *
 
 # --- CONFIGURATION ---
 LOG_DIR = "./bioreactor_system/"
@@ -37,6 +38,8 @@ def set_hardware_light(percentage):
 
 def inject_hardware_nutrients(ml_amount):
     print(f"   >>> [HARDWARE] Injecting {ml_amount:.2f} ml nutrients")
+    dispense(1, ml_amount)
+
 
 # ======================================================
 # --- REALISTIC BIOREACTOR ENVIRONMENT ---
@@ -129,6 +132,19 @@ class BioreactorEnv(gym.Env):
         info = {'o2_reading': new_o2, 'biomass': self.biomass, 'budget': self.daily_nutrient_budget, 'o2_rate': o2_rate}
         return self._get_observation(), float(reward), False, done, info
 
+class RealBioreactorEnv(BioreactorEnv):
+    def step(self, action):
+        obs, reward, terminated, truncated, info = super().step(action)
+
+        raw_o2 = get_real_o2()
+        real_o2 = float(raw_o2[0]) if isinstance(raw_o2, (list, np.ndarray)) else float(raw_o2)
+        self.o2_history.append(real_o2)
+        info['o2_reading'] = real_o2
+
+        obs = self._get_observation()
+        
+        return obs, reward, terminated, truncated, info
+
 # ======================================================
 # --- TRAINING CALLBACK ---
 # ======================================================
@@ -186,7 +202,7 @@ def deploy_to_reactor():
     print("\n🚀 DEPLOYING AI TO HARDWARE (Live Mode)")
     
     model = PPO.load(MODEL_PATH)
-    env = BioreactorEnv()
+    env = RealBioreactorEnv()
     obs, _ = env.reset()
     
     # Initialize CSV with Headers

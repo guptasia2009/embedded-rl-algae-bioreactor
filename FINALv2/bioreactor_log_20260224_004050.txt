@@ -1,0 +1,114 @@
+2026-02-24T00:40:50.302174 - DO sensors initialized: ['DO Concentration (mg/L)']
+2026-02-24T00:40:54.212275 - All LEDs cleared
+2026-02-24T00:40:54.212547 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-24T00:40:56.582663 - LEDs [26, 27, 28] set to intensity 255
+2026-02-24T00:41:02.589082 - LEDs [26, 27, 28] set to intensity 255
+2026-02-24T00:41:08.600991 - LEDs [26, 27, 28] set to intensity 255
+2026-02-24T00:41:14.610145 - LEDs [26, 27, 28] set to intensity 255
+2026-02-24T00:41:20.615832 - LEDs [26, 27, 28] set to intensity 255
+2026-02-24T00:41:26.623893 - LEDs [26, 27, 28] set to intensity 255
+2026-02-24T00:41:32.632468 - LEDs [26, 27, 28] set to intensity 255
+2026-02-24T00:41:38.637924 - LEDs [26, 27, 28] set to intensity 255
+2026-02-24T00:41:44.645890 - LEDs [26, 27, 28] set to intensity 255
+2026-02-24T00:41:50.653282 - LEDs [26, 27, 28] set to intensity 255
+2026-02-24T00:41:56.661165 - LEDs [26, 27, 28] set to intensity 255
+2026-02-24T00:42:02.668895 - LEDs [26, 27, 28] set to intensity 255
+2026-02-24T00:42:05.247918 - LEDs [26, 27, 28] set to intensity 0
+2026-02-24T00:42:30.663457 - DO sensors initialized: ['DO Concentration (mg/L)']
+2026-02-24T00:42:32.415287 - All LEDs cleared
+2026-02-24T00:42:32.415688 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-24T00:42:34.832976 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:42:40.837681 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:42:46.845069 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:42:52.851145 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:42:58.855782 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:43:04.862117 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:43:10.868664 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:43:16.877488 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:43:22.882921 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:43:28.890174 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:43:34.901726 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:43:40.913237 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:43:46.921277 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:43:52.927293 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:43:58.935595 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:44:04.949594 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:44:10.957649 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:44:16.963995 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:44:22.971010 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:44:28.981456 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:44:34.990501 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:44:40.997086 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:44:47.012600 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:44:53.017891 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:44:59.022360 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:45:05.031995 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:45:11.038941 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:45:17.046125 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:45:23.053379 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:45:29.064401 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:45:35.073371 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:45:41.078382 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:45:47.082939 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:45:53.087807 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:45:59.096154 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:46:05.110421 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:46:11.120861 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:46:17.126399 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T00:46:22.179334 - LEDs [26, 27, 28] set to intensity 0
+2026-02-24T00:46:38.394119 - DO sensors initialized: None
+2026-02-24T00:46:52.520082 - DO sensors initialized: ['DO Concentration (mg/L)']
+2026-02-24T00:46:57.494958 - All LEDs cleared
+2026-02-24T00:46:57.495216 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-24T00:46:59.892123 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:47:05.896949 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:47:11.904442 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:47:17.909810 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:47:23.914308 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:47:29.921719 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:47:35.930236 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:47:41.936587 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:47:47.947792 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:47:53.953401 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:47:59.960476 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:48:05.968805 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:48:11.974754 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:48:17.980154 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:48:23.988134 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:48:29.996172 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:48:36.011533 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:48:42.018634 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:48:48.029726 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:48:54.036941 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:49:00.047947 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:49:06.056851 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:49:12.068299 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:49:18.078415 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:49:24.086369 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:49:30.093279 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T00:49:36.100669 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:49:42.106740 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:49:48.116105 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:49:54.122141 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:50:00.127448 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:50:06.137547 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:50:12.145712 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:50:18.150306 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:50:24.157580 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:50:30.163240 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:50:36.171783 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:50:42.177700 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T00:50:48.184036 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T00:50:51.325945 - LEDs [26, 27, 28] set to intensity 0
+2026-02-24T00:51:37.007041 - DO sensors initialized: ['DO Concentration (mg/L)']
+2026-02-24T00:51:38.725023 - All LEDs cleared
+2026-02-24T00:51:38.725296 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-24T00:51:41.081898 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:52:19.819829 - DO sensors initialized: ['DO Concentration (mg/L)']
+2026-02-24T00:52:21.989435 - All LEDs cleared
+2026-02-24T00:52:21.989753 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-24T00:52:24.348690 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T00:52:56.550183 - DO sensors initialized: ['DO Concentration (mg/L)']
+2026-02-24T00:52:58.608859 - All LEDs cleared
+2026-02-24T00:52:58.609347 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-24T00:53:00.963197 - LEDs [26, 27, 28] set to intensity 17

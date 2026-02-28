@@ -1,4 +1,4 @@
-#sudo /home/siagupta/projects/IR/embeded-rl-algae-bioreactor/venv/bin/python main.py
+#sudo /home/siagupta/projects/IR/embeded-rl-algae-bioreactor/venv/bin/python main2.py
 #nohup bash -c 'echo -e "1,2\n1\n1\n3" | sudo /home/siagupta/projects/IR/embeded-rl-algae-bioreactor/venv/bin/python main2.py' > main2_output.log 2>&1 &
 import os
 import csv

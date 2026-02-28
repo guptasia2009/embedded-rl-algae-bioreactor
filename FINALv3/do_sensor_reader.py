@@ -52,7 +52,7 @@ def read_do():
         if len(measurements) < 3:
             measurements = list(measurements) + [None] * (3 - len(measurements))
         
-        return measurements[:2]
+        return measurements
         
     except Exception as e:
         log(f"ERROR: DO read failed,{e}")

@@ -708,3 +708,7 @@
 2026-02-28T13:06:41.469994 - [RL] [STATIC] O2: 10.08 | Light: 75.0% | Lights off: False
 2026-02-28T13:06:41.472073 - [RL] LEDs [26, 27, 28] set to intensity 5
 2026-02-28T13:06:41.472481 - [RL] [RL] O2: 1.93 | Light: 2.0% | Dispensed: 0.000ml | Budget: 0.00ml | Lights off: False
+2026-02-28T15:36:03.581722 - [UNKNOWN] DO sensors initialized: ['DO Concentration (mg/L)', 'DO Concentration (mg/L)', 'DO Concentration (mg/L)']
+2026-02-28T15:36:05.815389 - [UNKNOWN] Servos initialized
+2026-02-28T15:36:11.719479 - [UNKNOWN] All LEDs cleared
+2026-02-28T15:36:11.719724 - [UNKNOWN] LED strip initialized: 60 LEDs on GPIO 19

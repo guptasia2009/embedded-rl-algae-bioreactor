@@ -1,0 +1,16 @@
+2026-02-28T17:33:27.739519 - DO sensors initialized: None
+2026-02-28T17:33:29.903738 - Servos initialized
+2026-02-28T17:37:25.925818 - DO sensors initialized: ['DO Concentration (mg/L)', 'DO Concentration (mg/L)', 'DO Concentration (mg/L)']
+2026-02-28T17:37:28.085623 - Servos initialized
+2026-02-28T17:37:28.087890 - All LEDs cleared
+2026-02-28T17:37:28.088085 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-28T17:37:30.060761 - LEDs [38, 39, 40] set to intensity 191
+2026-02-28T17:37:30.063297 - LEDs [32, 33, 34] set to intensity 10
+2026-02-28T17:37:30.565174 - Servo 3 dispensed 2.00mL
+2026-02-28T17:37:30.565254 - Servo 2 dispensed 0.18mL
+2026-02-28T17:37:30.565550 - [EXP 3] O2: 10.49 | Light: 4.2% | Dispensed: 0.181ml | Budget: 3.82ml | Half-day used: 0.18ml | Lights off: False
+2026-02-28T17:37:30.565480 - [CONTROL 2] Injected 2.0 ml nutrients
+2026-02-28T17:37:30.565733 - [CONTROL 2] O2: 10.11 | Light: 75.0% | Lights off: False
+2026-02-28T17:37:30.566428 - LEDs [25, 26, 27] set to intensity 9
+2026-02-28T17:37:31.067468 - Servo 1 dispensed 0.14mL
+2026-02-28T17:37:31.067811 - [EXP 2] O2: 10.25 | Light: 3.6% | Dispensed: 0.140ml | Budget: 3.86ml | Half-day used: 0.14ml | Lights off: False

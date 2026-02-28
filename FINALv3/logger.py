@@ -7,7 +7,7 @@ from datetime import datetime
 from pathlib import Path
 
 _log_file = None
-_source = "UNKNOWN"
+_source = ""
 
 def set_source(source):
     """Set the source tag for this script (e.g. 'RL' or 'STATIC')"""
@@ -40,4 +40,4 @@ def log(message):
     log_file = get_log_file()
     
     with open(log_file, 'a') as f:
-        f.write(f"{timestamp} - [{_source}] {message}\n")
+        f.write(f"{timestamp} - {message}\n")

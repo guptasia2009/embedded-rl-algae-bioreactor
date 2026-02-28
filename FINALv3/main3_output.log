@@ -1,0 +1,70 @@
+nohup: ignoring input
+
+
+List of found devices
+1: GDX-ODO 0N4033W9 USB 
+2: GDX-ODO 0N4033Z1 USB 
+3: GDX-ODO 0N403481 USB 
+
+
+- If connecting a single device, type the number (e.g., 1) that
+corresponds with the device, and then press 'enter'.
+- If connnecting multiple devices, type in each number
+separated with commas with no spaces(e.g., 1,2), and then 
+press 'enter': 
+
+
+
+List of sensors for GDX-ODO 0N4033W9 USB 
+1: DO Concentration (mg/L)
+2: DO Saturation (%)
+3: Temperature (°C)
+4: Pressure (kPa)
+5: DO Salinity (mg/L)
+
+
+- If connecting a single sensor, type the number (e.g., 1) that
+corresponds with the sensor, and then press 'enter'.
+- If connecting multiple sensors, type in each number
+separated with commas with no spaces(e.g., 1,2), and then 
+click 'enter': 
+
+List of sensors for GDX-ODO 0N4033Z1 USB 
+1: DO Concentration (mg/L)
+2: DO Saturation (%)
+3: Temperature (°C)
+4: Pressure (kPa)
+5: DO Salinity (mg/L)
+
+
+- If connecting a single sensor, type the number (e.g., 1) that
+corresponds with the sensor, and then press 'enter'.
+- If connecting multiple sensors, type in each number
+separated with commas with no spaces(e.g., 1,2), and then 
+click 'enter': 
+
+List of sensors for GDX-ODO 0N403481 USB 
+1: DO Concentration (mg/L)
+2: DO Saturation (%)
+3: Temperature (°C)
+4: Pressure (kPa)
+5: DO Salinity (mg/L)
+
+
+- If connecting a single sensor, type the number (e.g., 1) that
+corresponds with the sensor, and then press 'enter'.
+- If connecting multiple sensors, type in each number
+separated with commas with no spaces(e.g., 1,2), and then 
+click 'enter': 
+--- BIOREACTOR CONTROL ---
+1: Train model (200k steps, simulation)
+2: Run safety demo
+3: Deploy to hardware (EXP 2 + EXP 3 + CONTROL 2)
+4: Exit
+Select: [INFO] [EXP 2] Starting from base trained model...
+[INFO] [EXP 3] Starting from base trained model...
+[INFO] Deploying EXP 2 and EXP 3 with continual learning enabled.
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a DummyVecEnv.
+Logging to ./bioreactor_system/
+Logging to ./bioreactor_system/

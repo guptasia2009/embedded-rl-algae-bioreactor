@@ -129,3 +129,358 @@
 2026-02-24T15:38:58.822186 - LEDs [26, 27, 28] set to intensity 17
 2026-02-24T15:38:59.324970 - Servo 1 dispensed 0.00mL
 2026-02-24T15:39:01.048705 - LEDs [26, 27, 28] set to intensity 0
+2026-02-24T16:02:57.305654 - DO sensors initialized: None
+2026-02-24T16:02:59.448987 - Servos initialized
+2026-02-24T16:03:06.619472 - All LEDs cleared
+2026-02-24T16:03:06.619893 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-24T16:03:08.642839 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T16:03:09.144728 - Servo 1 dispensed 4.00mL
+2026-02-24T16:03:09.145512 - WARNING: No DO readings received
+2026-02-24T16:03:09.145965 - WARNING: No DO readings received
+2026-02-24T16:03:48.872424 - DO sensors initialized: ['DO Concentration (mg/L)']
+2026-02-24T16:03:50.978883 - Servos initialized
+2026-02-24T16:04:01.857800 - All LEDs cleared
+2026-02-24T16:04:01.858202 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-24T16:04:03.920409 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T16:04:04.422099 - Servo 1 dispensed 4.00mL
+2026-02-24T16:04:10.427492 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T16:04:10.928955 - Servo 1 dispensed 0.00mL
+2026-02-24T16:04:16.934505 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T16:04:17.435905 - Servo 1 dispensed 0.00mL
+2026-02-24T16:04:23.444676 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T16:04:23.947407 - Servo 1 dispensed 0.00mL
+2026-02-24T16:04:29.954635 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T16:04:30.455920 - Servo 1 dispensed 0.00mL
+2026-02-24T16:04:36.464893 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T16:04:36.967438 - Servo 1 dispensed 0.00mL
+2026-02-24T16:04:42.978624 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T16:04:43.481593 - Servo 1 dispensed 0.00mL
+2026-02-24T16:04:49.492239 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T16:04:49.995141 - Servo 1 dispensed 0.00mL
+2026-02-24T16:04:56.001866 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T16:04:56.503361 - Servo 1 dispensed 0.00mL
+2026-02-24T16:05:02.527342 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T16:05:03.030606 - Servo 1 dispensed 0.00mL
+2026-02-24T16:05:09.040496 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T16:05:09.543270 - Servo 1 dispensed 0.00mL
+2026-02-24T16:05:15.553978 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T16:05:16.056817 - Servo 1 dispensed 0.00mL
+2026-02-24T16:05:22.065937 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T16:05:22.567530 - Servo 1 dispensed 0.00mL
+2026-02-24T16:05:28.579040 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T16:05:29.081978 - Servo 1 dispensed 0.00mL
+2026-02-24T16:05:35.088828 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T16:05:35.590166 - Servo 1 dispensed 0.00mL
+2026-02-24T16:05:41.598838 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T16:05:42.101888 - Servo 1 dispensed 0.00mL
+2026-02-24T16:05:48.126696 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T16:05:48.630291 - Servo 1 dispensed 0.00mL
+2026-02-24T16:05:54.639066 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T16:05:55.142050 - Servo 1 dispensed 0.00mL
+2026-02-24T16:06:01.149503 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T16:06:01.650837 - Servo 1 dispensed 0.00mL
+2026-02-24T16:06:07.659434 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T16:06:08.162253 - Servo 1 dispensed 0.00mL
+2026-02-24T16:06:14.169755 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T16:06:14.671248 - Servo 1 dispensed 0.00mL
+2026-02-24T16:06:20.680591 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T16:06:21.183409 - Servo 1 dispensed 0.00mL
+2026-02-24T16:06:27.193694 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T16:06:27.696582 - Servo 1 dispensed 0.00mL
+2026-02-24T16:06:33.712044 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T16:06:34.214045 - Servo 1 dispensed 0.00mL
+2026-02-24T16:06:40.221136 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T16:06:40.722522 - Servo 1 dispensed 0.00mL
+2026-02-24T16:06:46.731522 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T16:06:47.234412 - Servo 1 dispensed 0.00mL
+2026-02-24T16:06:53.240462 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T16:06:53.742610 - Servo 1 dispensed 0.00mL
+2026-02-24T16:06:59.752705 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T16:07:00.255590 - Servo 1 dispensed 0.00mL
+2026-02-24T16:07:06.262442 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T16:07:06.763788 - Servo 1 dispensed 0.00mL
+2026-02-24T16:07:12.772710 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T16:07:13.275617 - Servo 1 dispensed 0.00mL
+2026-02-24T16:07:19.292980 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T16:07:19.796023 - Servo 1 dispensed 0.00mL
+2026-02-24T16:07:25.807022 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T16:07:26.308464 - Servo 1 dispensed 0.00mL
+2026-02-24T16:07:32.319220 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T16:07:32.822055 - Servo 1 dispensed 0.00mL
+2026-02-24T16:07:38.832706 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T16:07:39.335612 - Servo 1 dispensed 0.00mL
+2026-02-24T16:07:45.347041 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T16:07:45.849974 - Servo 1 dispensed 0.00mL
+2026-02-24T16:07:51.862404 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T16:07:52.363801 - Servo 1 dispensed 0.00mL
+2026-02-24T16:07:58.369133 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T16:07:58.870479 - Servo 1 dispensed 0.00mL
+2026-02-24T16:08:04.882993 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T16:08:05.384824 - Servo 1 dispensed 0.00mL
+2026-02-24T16:08:11.396534 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T16:08:11.899712 - Servo 1 dispensed 0.00mL
+2026-02-24T16:08:17.906721 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T16:08:18.408192 - Servo 1 dispensed 0.00mL
+2026-02-24T16:08:24.416709 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T16:08:24.919370 - Servo 1 dispensed 0.00mL
+2026-02-24T16:08:30.929909 - LEDs [26, 27, 28] set to intensity 13
+2026-02-24T16:08:31.432857 - Servo 1 dispensed 0.00mL
+2026-02-24T16:08:37.440183 - LEDs [26, 27, 28] set to intensity 13
+2026-02-24T16:08:37.941540 - Servo 1 dispensed 0.00mL
+2026-02-24T16:08:43.950853 - LEDs [26, 27, 28] set to intensity 13
+2026-02-24T16:08:44.453829 - Servo 1 dispensed 0.00mL
+2026-02-24T16:08:50.479445 - LEDs [26, 27, 28] set to intensity 13
+2026-02-24T16:08:50.982682 - Servo 1 dispensed 0.00mL
+2026-02-24T16:08:56.992145 - LEDs [26, 27, 28] set to intensity 13
+2026-02-24T16:08:57.495351 - Servo 1 dispensed 0.00mL
+2026-02-24T16:09:03.502167 - LEDs [26, 27, 28] set to intensity 13
+2026-02-24T16:09:04.003577 - Servo 1 dispensed 0.00mL
+2026-02-24T16:09:10.012832 - LEDs [26, 27, 28] set to intensity 13
+2026-02-24T16:09:10.515680 - Servo 1 dispensed 0.00mL
+2026-02-24T16:09:16.522786 - LEDs [26, 27, 28] set to intensity 12
+2026-02-24T16:09:17.024158 - Servo 1 dispensed 0.00mL
+2026-02-24T16:09:23.032728 - LEDs [26, 27, 28] set to intensity 12
+2026-02-24T16:09:23.535879 - Servo 1 dispensed 0.00mL
+2026-02-24T16:09:29.546179 - LEDs [26, 27, 28] set to intensity 12
+2026-02-24T16:09:30.049593 - Servo 1 dispensed 0.00mL
+2026-02-24T16:09:36.075092 - LEDs [26, 27, 28] set to intensity 12
+2026-02-24T16:09:36.578097 - Servo 1 dispensed 0.00mL
+2026-02-24T16:09:42.586710 - LEDs [26, 27, 28] set to intensity 12
+2026-02-24T16:09:43.089522 - Servo 1 dispensed 0.00mL
+2026-02-24T16:09:49.097533 - LEDs [26, 27, 28] set to intensity 12
+2026-02-24T16:09:49.598859 - Servo 1 dispensed 0.00mL
+2026-02-24T16:09:55.608715 - LEDs [26, 27, 28] set to intensity 11
+2026-02-24T16:09:56.111475 - Servo 1 dispensed 0.00mL
+2026-02-24T16:10:02.121802 - LEDs [26, 27, 28] set to intensity 11
+2026-02-24T16:10:02.624576 - Servo 1 dispensed 0.00mL
+2026-02-24T16:10:08.631390 - LEDs [26, 27, 28] set to intensity 11
+2026-02-24T16:10:09.132784 - Servo 1 dispensed 0.00mL
+2026-02-24T16:10:15.141429 - LEDs [26, 27, 28] set to intensity 11
+2026-02-24T16:10:15.644279 - Servo 1 dispensed 0.00mL
+2026-02-24T16:10:21.663747 - LEDs [26, 27, 28] set to intensity 11
+2026-02-24T16:10:22.166840 - Servo 1 dispensed 0.00mL
+2026-02-24T16:10:28.176660 - LEDs [26, 27, 28] set to intensity 11
+2026-02-24T16:10:28.679484 - Servo 1 dispensed 0.00mL
+2026-02-24T16:10:34.690086 - LEDs [26, 27, 28] set to intensity 10
+2026-02-24T16:10:35.191489 - Servo 1 dispensed 0.00mL
+2026-02-24T16:10:41.200361 - LEDs [26, 27, 28] set to intensity 10
+2026-02-24T16:10:41.703110 - Servo 1 dispensed 0.00mL
+2026-02-24T16:10:47.713272 - LEDs [26, 27, 28] set to intensity 10
+2026-02-24T16:10:48.216269 - Servo 1 dispensed 0.00mL
+2026-02-24T16:10:54.223295 - LEDs [26, 27, 28] set to intensity 10
+2026-02-24T16:10:54.724792 - Servo 1 dispensed 0.00mL
+2026-02-24T16:11:00.733854 - LEDs [26, 27, 28] set to intensity 9
+2026-02-24T16:11:01.236769 - Servo 1 dispensed 0.00mL
+2026-02-24T16:11:07.267411 - LEDs [26, 27, 28] set to intensity 9
+2026-02-24T16:11:07.771266 - Servo 1 dispensed 0.00mL
+2026-02-24T16:11:13.780554 - LEDs [26, 27, 28] set to intensity 9
+2026-02-24T16:11:14.283749 - Servo 1 dispensed 0.00mL
+2026-02-24T16:11:20.290942 - LEDs [26, 27, 28] set to intensity 9
+2026-02-24T16:11:20.792426 - Servo 1 dispensed 0.00mL
+2026-02-24T16:11:26.804622 - LEDs [26, 27, 28] set to intensity 9
+2026-02-24T16:11:27.307757 - Servo 1 dispensed 0.00mL
+2026-02-24T16:11:33.314283 - LEDs [26, 27, 28] set to intensity 8
+2026-02-24T16:11:33.815628 - Servo 1 dispensed 0.00mL
+2026-02-24T16:11:39.823943 - LEDs [26, 27, 28] set to intensity 8
+2026-02-24T16:11:40.326733 - Servo 1 dispensed 0.00mL
+2026-02-24T16:11:46.333503 - LEDs [26, 27, 28] set to intensity 8
+2026-02-24T16:11:46.834867 - Servo 1 dispensed 0.00mL
+2026-02-24T16:11:52.856639 - LEDs [26, 27, 28] set to intensity 7
+2026-02-24T16:11:53.360875 - Servo 1 dispensed 0.00mL
+2026-02-24T16:11:59.367662 - LEDs [26, 27, 28] set to intensity 7
+2026-02-24T16:11:59.869226 - Servo 1 dispensed 0.00mL
+2026-02-24T16:12:05.879014 - LEDs [26, 27, 28] set to intensity 7
+2026-02-24T16:12:06.382201 - Servo 1 dispensed 0.00mL
+2026-02-24T16:12:12.389739 - LEDs [26, 27, 28] set to intensity 7
+2026-02-24T16:12:12.891282 - Servo 1 dispensed 0.00mL
+2026-02-24T16:12:18.897989 - LEDs [26, 27, 28] set to intensity 6
+2026-02-24T16:12:19.399313 - Servo 1 dispensed 0.00mL
+2026-02-24T16:12:25.411853 - LEDs [26, 27, 28] set to intensity 6
+2026-02-24T16:12:25.914836 - Servo 1 dispensed 0.00mL
+2026-02-24T16:12:31.921765 - LEDs [26, 27, 28] set to intensity 6
+2026-02-24T16:12:32.423275 - Servo 1 dispensed 0.00mL
+2026-02-24T16:12:38.447621 - LEDs [26, 27, 28] set to intensity 6
+2026-02-24T16:12:38.950698 - Servo 1 dispensed 0.00mL
+2026-02-24T16:12:44.959129 - LEDs [26, 27, 28] set to intensity 5
+2026-02-24T16:12:45.460493 - Servo 1 dispensed 0.00mL
+2026-02-24T16:12:51.471580 - LEDs [26, 27, 28] set to intensity 5
+2026-02-24T16:12:51.974403 - Servo 1 dispensed 0.00mL
+2026-02-24T16:12:57.981138 - LEDs [26, 27, 28] set to intensity 5
+2026-02-24T16:12:58.482487 - Servo 1 dispensed 0.00mL
+2026-02-24T16:13:04.491303 - LEDs [26, 27, 28] set to intensity 4
+2026-02-24T16:13:04.994033 - Servo 1 dispensed 0.00mL
+2026-02-24T16:13:11.002405 - LEDs [26, 27, 28] set to intensity 4
+2026-02-24T16:13:11.505209 - Servo 1 dispensed 0.00mL
+2026-02-24T16:13:17.517262 - LEDs [26, 27, 28] set to intensity 4
+2026-02-24T16:13:18.020290 - Servo 1 dispensed 0.00mL
+2026-02-24T16:13:24.034345 - LEDs [26, 27, 28] set to intensity 3
+2026-02-24T16:13:24.535949 - Servo 1 dispensed 0.00mL
+2026-02-24T16:13:30.546859 - LEDs [26, 27, 28] set to intensity 3
+2026-02-24T16:13:31.049664 - Servo 1 dispensed 0.00mL
+2026-02-24T16:13:37.060087 - LEDs [26, 27, 28] set to intensity 3
+2026-02-24T16:13:37.563174 - Servo 1 dispensed 0.00mL
+2026-02-24T16:13:43.570345 - LEDs [26, 27, 28] set to intensity 2
+2026-02-24T16:13:44.071645 - Servo 1 dispensed 0.00mL
+2026-02-24T16:13:50.079948 - LEDs [26, 27, 28] set to intensity 2
+2026-02-24T16:13:50.582742 - Servo 1 dispensed 0.00mL
+2026-02-24T16:13:56.592814 - LEDs [26, 27, 28] set to intensity 2
+2026-02-24T16:13:57.095610 - Servo 1 dispensed 0.00mL
+2026-02-24T16:14:03.102291 - LEDs [26, 27, 28] set to intensity 1
+2026-02-24T16:14:03.603640 - Servo 1 dispensed 0.00mL
+2026-02-24T16:14:09.612327 - LEDs [26, 27, 28] set to intensity 1
+2026-02-24T16:14:10.114956 - Servo 1 dispensed 0.00mL
+2026-02-24T16:14:16.124988 - LEDs [26, 27, 28] set to intensity 1
+2026-02-24T16:14:16.627940 - Servo 1 dispensed 0.00mL
+2026-02-24T16:14:22.638909 - LEDs [26, 27, 28] set to intensity 0
+2026-02-24T16:14:23.140262 - Servo 1 dispensed 0.00mL
+2026-02-24T16:28:06.253761 - DO sensors initialized: ['DO Concentration (mg/L)']
+2026-02-24T16:28:08.412310 - Servos initialized
+2026-02-24T16:28:21.395598 - All LEDs cleared
+2026-02-24T16:28:21.396119 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-24T16:28:38.259435 - DO sensors initialized: None
+2026-02-24T16:28:40.404511 - Servos initialized
+2026-02-24T17:18:35.224503 - DO sensors initialized: ['DO Concentration (mg/L)']
+2026-02-24T17:18:37.326247 - Servos initialized
+2026-02-24T17:18:40.045595 - All LEDs cleared
+2026-02-24T17:18:40.045997 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-24T17:28:20.064767 - DO sensors initialized: ['DO Concentration (mg/L)']
+2026-02-24T17:28:22.198975 - Servos initialized
+2026-02-24T17:28:35.532515 - All LEDs cleared
+2026-02-24T17:28:35.532932 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-24T17:28:55.937970 - LEDs [26, 27, 28] set to intensity 0
+2026-02-24T17:39:54.577401 - DO sensors initialized: ['DO Concentration (mg/L)']
+2026-02-24T17:39:56.740190 - Servos initialized
+2026-02-24T17:39:59.399690 - All LEDs cleared
+2026-02-24T17:39:59.399969 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-24T17:40:01.955726 - Servo 1 dispensed 1.00mL
+2026-02-24T17:41:55.328209 - LEDs [26, 27, 28] set to intensity 0
+2026-02-24T17:42:00.635529 - All LEDs cleared
+2026-02-24T17:42:00.635790 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-24T17:42:03.162587 - LEDs [26, 27, 28] set to intensity 0
+2026-02-24T17:42:49.491614 - DO sensors initialized: ['DO Concentration (mg/L)']
+2026-02-24T17:42:51.609842 - Servos initialized
+2026-02-24T17:43:01.611858 - All LEDs cleared
+2026-02-24T17:43:01.612136 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-24T17:43:04.131427 - Servo 1 dispensed 1.00mL
+2026-02-24T17:45:27.762764 - LEDs [26, 27, 28] set to intensity 0
+2026-02-24T17:59:54.959245 - DO sensors initialized: None
+2026-02-24T17:59:57.061211 - Servos initialized
+2026-02-24T18:00:16.514869 - All LEDs cleared
+2026-02-24T18:00:16.523208 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-24T18:00:18.728569 - WARNING: No DO readings received
+2026-02-24T18:00:18.728809 - WARNING: No DO readings received
+2026-02-24T18:00:38.400282 - DO sensors initialized: ['DO Concentration (mg/L)']
+2026-02-24T18:00:40.554841 - Servos initialized
+2026-02-24T18:00:43.517624 - All LEDs cleared
+2026-02-24T18:00:43.518087 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-24T18:00:45.589372 - LEDs [26, 27, 28] set to intensity 11
+2026-02-24T18:00:46.091031 - Servo 1 dispensed 1.00mL
+2026-02-24T18:01:05.100328 - LEDs [26, 27, 28] set to intensity 0
+2026-02-24T18:01:27.751372 - DO sensors initialized: None
+2026-02-24T18:01:42.346624 - DO sensors initialized: ['DO Concentration (mg/L)']
+2026-02-24T18:01:44.499131 - Servos initialized
+2026-02-24T18:01:51.167141 - All LEDs cleared
+2026-02-24T18:01:51.167443 - LED strip initialized: 60 LEDs on GPIO 19
+2026-02-24T18:01:53.155673 - LEDs [26, 27, 28] set to intensity 9
+2026-02-24T18:01:53.656988 - Servo 1 dispensed 1.00mL
+2026-02-24T18:02:03.665511 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T18:02:04.166879 - Servo 1 dispensed 1.00mL
+2026-02-24T18:02:14.180605 - LEDs [26, 27, 28] set to intensity 19
+2026-02-24T18:02:24.199111 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T18:02:34.213528 - LEDs [26, 27, 28] set to intensity 12
+2026-02-24T18:02:44.227581 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T18:02:54.242247 - LEDs [26, 27, 28] set to intensity 19
+2026-02-24T18:03:04.256694 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T18:03:14.270721 - LEDs [26, 27, 28] set to intensity 18
+2026-02-24T18:03:24.277984 - LEDs [26, 27, 28] set to intensity 19
+2026-02-24T18:03:34.285225 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T18:03:44.298284 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T18:03:54.311553 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T18:04:04.318806 - LEDs [26, 27, 28] set to intensity 18
+2026-02-24T18:04:14.325630 - LEDs [26, 27, 28] set to intensity 21
+2026-02-24T18:04:24.333191 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T18:04:34.347916 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T18:04:44.361035 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T18:04:54.374648 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T18:05:04.382349 - LEDs [26, 27, 28] set to intensity 15
+2026-02-24T18:05:14.396333 - LEDs [26, 27, 28] set to intensity 9
+2026-02-24T18:05:24.414751 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T18:05:34.423613 - LEDs [26, 27, 28] set to intensity 17
+2026-02-24T18:05:44.431099 - LEDs [26, 27, 28] set to intensity 11
+2026-02-24T18:05:54.444726 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T18:06:04.452099 - LEDs [26, 27, 28] set to intensity 11
+2026-02-24T18:06:14.468612 - LEDs [26, 27, 28] set to intensity 12
+2026-02-24T18:06:24.476203 - LEDs [26, 27, 28] set to intensity 10
+2026-02-24T18:06:34.488471 - LEDs [26, 27, 28] set to intensity 12
+2026-02-24T18:06:44.501839 - LEDs [26, 27, 28] set to intensity 18
+2026-02-24T18:06:54.515991 - LEDs [26, 27, 28] set to intensity 13
+2026-02-24T18:07:04.530261 - LEDs [26, 27, 28] set to intensity 12
+2026-02-24T18:07:14.543647 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T18:07:24.557013 - LEDs [26, 27, 28] set to intensity 7
+2026-02-24T18:07:34.564669 - LEDs [26, 27, 28] set to intensity 8
+2026-02-24T18:07:44.571578 - LEDs [26, 27, 28] set to intensity 11
+2026-02-24T18:07:54.586190 - LEDs [26, 27, 28] set to intensity 12
+2026-02-24T18:08:04.599657 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T18:08:14.613876 - LEDs [26, 27, 28] set to intensity 11
+2026-02-24T18:08:24.621095 - LEDs [26, 27, 28] set to intensity 4
+2026-02-24T18:08:34.629313 - LEDs [26, 27, 28] set to intensity 10
+2026-02-24T18:08:44.643954 - LEDs [26, 27, 28] set to intensity 11
+2026-02-24T18:08:54.658176 - LEDs [26, 27, 28] set to intensity 10
+2026-02-24T18:09:04.671627 - LEDs [26, 27, 28] set to intensity 10
+2026-02-24T18:09:14.688416 - LEDs [26, 27, 28] set to intensity 8
+2026-02-24T18:09:24.702362 - LEDs [26, 27, 28] set to intensity 13
+2026-02-24T18:09:34.710117 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T18:09:35.211025 - Servo 1 reset to 7mL
+2026-02-24T18:09:45.234810 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T18:09:56.050660 - LEDs [26, 27, 28] set to intensity 11
+2026-02-24T18:09:56.552085 - Servo 1 dispensed 1.00mL
+2026-02-24T18:10:06.565816 - LEDs [26, 27, 28] set to intensity 12
+2026-02-24T18:10:07.068826 - Servo 1 dispensed 0.67mL
+2026-02-24T18:10:17.082688 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T18:10:17.585337 - Servo 1 dispensed 0.33mL
+2026-02-24T18:10:27.600216 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T18:10:37.614546 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T18:10:47.627995 - LEDs [26, 27, 28] set to intensity 7
+2026-02-24T18:10:57.642100 - LEDs [26, 27, 28] set to intensity 12
+2026-02-24T18:11:07.656022 - LEDs [26, 27, 28] set to intensity 11
+2026-02-24T18:11:17.671126 - LEDs [26, 27, 28] set to intensity 10
+2026-02-24T18:11:27.684695 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T18:11:37.698123 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T18:11:47.713419 - LEDs [26, 27, 28] set to intensity 18
+2026-02-24T18:11:57.726968 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T18:12:07.741968 - LEDs [26, 27, 28] set to intensity 12
+2026-02-24T18:12:17.756200 - LEDs [26, 27, 28] set to intensity 11
+2026-02-24T18:12:27.769469 - LEDs [26, 27, 28] set to intensity 11
+2026-02-24T18:12:37.777337 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T18:12:47.784926 - LEDs [26, 27, 28] set to intensity 9
+2026-02-24T18:12:57.798303 - LEDs [26, 27, 28] set to intensity 11
+2026-02-24T18:13:07.806370 - LEDs [26, 27, 28] set to intensity 9
+2026-02-24T18:13:17.813323 - LEDs [26, 27, 28] set to intensity 8
+2026-02-24T18:13:27.822422 - LEDs [26, 27, 28] set to intensity 13
+2026-02-24T18:13:37.829238 - LEDs [26, 27, 28] set to intensity 6
+2026-02-24T18:13:47.836743 - LEDs [26, 27, 28] set to intensity 14
+2026-02-24T18:13:57.844082 - LEDs [26, 27, 28] set to intensity 13
+2026-02-24T18:14:07.858796 - LEDs [26, 27, 28] set to intensity 16
+2026-02-24T18:14:17.872747 - LEDs [26, 27, 28] set to intensity 6
+2026-02-24T18:14:27.886323 - LEDs [26, 27, 28] set to intensity 6
+2026-02-24T18:14:37.900342 - LEDs [26, 27, 28] set to intensity 7
+2026-02-24T18:14:47.915420 - LEDs [26, 27, 28] set to intensity 10
+2026-02-24T18:14:57.924477 - LEDs [26, 27, 28] set to intensity 8
+2026-02-24T18:15:07.939868 - LEDs [26, 27, 28] set to intensity 6
+2026-02-24T18:15:17.953811 - LEDs [26, 27, 28] set to intensity 12
+2026-02-24T18:15:27.967261 - LEDs [26, 27, 28] set to intensity 8
+2026-02-24T18:15:37.981443 - LEDs [26, 27, 28] set to intensity 5
+2026-02-24T18:15:47.995799 - LEDs [26, 27, 28] set to intensity 7
+2026-02-24T18:15:58.010427 - LEDs [26, 27, 28] set to intensity 11
+2026-02-24T18:16:08.024436 - LEDs [26, 27, 28] set to intensity 8
+2026-02-24T18:16:18.039501 - LEDs [26, 27, 28] set to intensity 3
+2026-02-24T18:16:28.054360 - LEDs [26, 27, 28] set to intensity 5
+2026-02-24T18:16:38.068459 - LEDs [26, 27, 28] set to intensity 6
+2026-02-24T18:16:48.082542 - LEDs [26, 27, 28] set to intensity 10
+2026-02-24T18:16:58.096147 - LEDs [26, 27, 28] set to intensity 1
+2026-02-24T18:17:08.109985 - LEDs [26, 27, 28] set to intensity 4
+2026-02-24T18:17:18.123984 - LEDs [26, 27, 28] set to intensity 5
+2026-02-24T18:17:28.139367 - LEDs [26, 27, 28] set to intensity 1
+2026-02-24T18:17:38.153394 - LEDs [26, 27, 28] set to intensity 8
+2026-02-24T18:17:38.655170 - Servo 1 reset to 7mL
+2026-02-24T18:17:46.742737 - LEDs [26, 27, 28] set to intensity 0

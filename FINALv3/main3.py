@@ -470,8 +470,19 @@ def _setup_model(load_path, env):
     model.n_steps = 48
     model.batch_size = 16
     model._last_obs = None
-    model._setup_learn(total_timesteps=100000, callback=None, reset_num_timesteps=False)
+    model._setup_learn(total_timesteps=10_000_000, callback=None, reset_num_timesteps=False)
+    # FIX: ensure buffer starts clean so the assert self.full check
+    # always triggers at the right boundary (every 48 steps / 24 hours)
+    model.rollout_buffer.reset()
     return model
+
+
+def _init_csv(path, headers):
+    """Write CSV header only if the file doesn't already exist.
+    This preserves historical data across restarts."""
+    if not os.path.exists(path):
+        with open(path, mode='w', newline='') as f:
+            csv.writer(f).writerow(headers)
 
 
 def deploy_to_reactor():
@@ -479,15 +490,13 @@ def deploy_to_reactor():
 
     initialize_leds()
 
-    with open(CSV_CONTROL, mode='w', newline='') as f:
-        csv.writer(f).writerow(["Timestamp", "Light_Pct", "O2_Reading", "Lights_Off"])
-
-    for path in [CSV_EXP2, CSV_EXP3]:
-        with open(path, mode='w', newline='') as f:
-            csv.writer(f).writerow([
-                "Timestamp", "Light_Pct", "Nutri_ml", "O2_Reading",
-                "Biomass", "Daily_Budget_Left", "Half_Day_Used", "Lights_Off"
-            ])
+    # FIX: Only create CSV files with headers if they don't already exist.
+    # Previously used mode='w' which wiped all historical data on every restart.
+    _init_csv(CSV_CONTROL, ["Timestamp", "Light_Pct", "O2_Reading", "Lights_Off"])
+    _init_csv(CSV_EXP2, ["Timestamp", "Light_Pct", "Nutri_ml", "O2_Reading",
+                          "Biomass", "Daily_Budget_Left", "Half_Day_Used", "Lights_Off"])
+    _init_csv(CSV_EXP3, ["Timestamp", "Light_Pct", "Nutri_ml", "O2_Reading",
+                          "Biomass", "Daily_Budget_Left", "Half_Day_Used", "Lights_Off"])
 
     load_exp2 = _load_model(ONLINE_MODEL_EXP2, "EXP 2")
     load_exp3 = _load_model(ONLINE_MODEL_EXP3, "EXP 3")
@@ -523,8 +532,11 @@ def deploy_to_reactor():
 
     def run_exp2():
         try:
+            # FIX: total_timesteps set very high so learn() never tries to
+            # finalize training at an arbitrary cutoff with a partial buffer.
+            # Continual learning updates still happen every n_steps=48 (24hrs).
             model_exp2.learn(
-                total_timesteps=100000,
+                total_timesteps=10_000_000,
                 callback=[
                     TrainingCallback(check_freq=48),
                     HardwareStepCallbackEXP2(barrier_end=barrier_end, barrier_start=barrier_start, step_interval_seconds=1800)
@@ -542,8 +554,9 @@ def deploy_to_reactor():
 
     def run_exp3():
         try:
+            # FIX: same as above for EXP 3
             model_exp3.learn(
-                total_timesteps=100000,
+                total_timesteps=10_000_000,
                 callback=[
                     TrainingCallback(check_freq=48),
                     HardwareStepCallbackEXP3(barrier_end=barrier_end, barrier_start=barrier_start)

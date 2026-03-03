@@ -1,3 +1,3 @@
-time/iterations,rollout/ep_rew_mean,time/time_elapsed,rollout/ep_len_mean,time/fps,time/total_timesteps
-1,13.612667429999998,86404,96.0,0,200752,,,,,,
-1,13.612667429999998,86404,96.0,0,200752
+time/iterations,rollout/ep_rew_mean,time/fps,time/time_elapsed,time/total_timesteps,rollout/ep_len_mean
+1,13.612667429999998,0,86404,200752,96.0,,,,,,
+1,13.612667429999998,0,86404,200752,96.0

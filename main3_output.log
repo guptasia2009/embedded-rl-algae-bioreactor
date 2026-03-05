@@ -1,0 +1,2 @@
+nohup: ignoring input
+/home/siagupta/projects/IR/embeded-rl-algae-bioreactor/venv/bin/python: can't open file '/home/siagupta/projects/IR/embeded-rl-algae-bioreactor/main3.py': [Errno 2] No such file or directory

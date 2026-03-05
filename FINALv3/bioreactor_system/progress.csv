@@ -1,3 +1,3 @@
-time/iterations,rollout/ep_rew_mean,time/fps,time/time_elapsed,time/total_timesteps,rollout/ep_len_mean
-1,13.612667429999998,0,86404,200752,96.0,,,,,,
-1,13.612667429999998,0,86404,200752,96.0
+time/iterations,rollout/ep_len_mean,train/n_updates,train/approx_kl,train/clip_range,train/learning_rate,rollout/ep_rew_mean,train/policy_gradient_loss,train/clip_fraction,time/fps,train/loss,time/time_elapsed,train/value_loss,time/total_timesteps,train/entropy_loss,train/explained_variance,train/std
+1,96.0,765,0.0034994457,0.2,0.0001,13.612667429999998,-0.008045732643869189,0.005555555555555556,0,61.64129638671875,86404,127.20638766818577,200752,-3.217619111802843,-0.013649582862854004,1.2173619270324707,,,,,,,,,,,,,,,,,
+1,96.0,765,0.0021200266,0.2,0.0001,13.612667429999998,-0.007900886279013421,0.0,0,57.60696792602539,86404,127.08959282769098,200752,-3.217667245864868,-0.011351346969604492,1.2173678874969482

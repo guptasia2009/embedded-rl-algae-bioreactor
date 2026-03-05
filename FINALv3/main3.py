@@ -89,7 +89,7 @@ def inject_exp3_nutrients(ml_amount):
 
 
 # Static control state — tracks nutrient timing and injection count
-_static_last_injection   = None   # timestamp of last injection (None = inject immediately)
+_static_last_injection   = None
 _static_injections_since_reset = 0
 _static_lock = threading.Lock()
 
@@ -102,8 +102,6 @@ def run_control_step(control_o2):
     current_light = 0.0 if lights_off else STATIC_LIGHT_INTENSITY
     set_leds(CONTROL_LEDS, current_light * 255 / 100)
 
-    # Inject 2ml immediately on first call, then every 12 hours.
-    # After every 2nd injection (4ml total = full syringe), reset servo 3.
     with _static_lock:
         time_since_last = (now - _static_last_injection) if _static_last_injection is not None else STATIC_NUTRIENT_INTERVAL
         if time_since_last >= STATIC_NUTRIENT_INTERVAL:
@@ -113,7 +111,6 @@ def run_control_step(control_o2):
             _static_last_injection = now
             _static_injections_since_reset += 1
 
-            # After 2 injections (4ml) reset the syringe
             if _static_injections_since_reset >= 2:
                 print("[CONTROL 2][HARDWARE] 4ml dispensed - resetting servo 3. Please refill syringe.")
                 reset_servo(3)
@@ -314,9 +311,6 @@ class TrainingCallback(BaseCallback):
 
 
 class HardwareStepCallbackEXP2(BaseCallback):
-    # EXP2 owns timing. Flow per step:
-    #   act -> barrier_end.wait() -> sleep -> barrier_start.wait() -> next step
-    # This ensures EXP3 can't start its next step until EXP2 has slept.
     def __init__(self, barrier_end, barrier_start, step_interval_seconds=1800, verbose=1):
         super(HardwareStepCallbackEXP2, self).__init__(verbose)
         self.barrier_end = barrier_end
@@ -362,18 +356,13 @@ class HardwareStepCallbackEXP2(BaseCallback):
                 str(info.get('lights_off', False))
             ])
 
-        # Both agents have finished this step
         self.barrier_end.wait()
-        # Sleep for the full interval
         time.sleep(self.step_interval_seconds)
-        # Release EXP3 to start the next step
         self.barrier_start.wait()
         return True
 
 
 class HardwareStepCallbackEXP3(BaseCallback):
-    # EXP3 acts, waits at barrier_end for EXP2 to finish,
-    # then waits at barrier_start until EXP2 has slept and is ready.
     def __init__(self, barrier_end, barrier_start, verbose=1):
         super(HardwareStepCallbackEXP3, self).__init__(verbose)
         self.barrier_end = barrier_end
@@ -416,9 +405,7 @@ class HardwareStepCallbackEXP3(BaseCallback):
                 str(info.get('lights_off', False))
             ])
 
-        # Wait for EXP2 to finish its step
         self.barrier_end.wait()
-        # Wait for EXP2 to finish sleeping before starting next step
         self.barrier_start.wait()
         return True
 
@@ -471,27 +458,129 @@ def _setup_model(load_path, env):
     model.batch_size = 16
     model._last_obs = None
     model._setup_learn(total_timesteps=10_000_000, callback=None, reset_num_timesteps=False)
-    # FIX: ensure buffer starts clean so the assert self.full check
-    # always triggers at the right boundary (every 48 steps / 24 hours)
-    model.rollout_buffer.reset()
+    # Explicitly rebuild rollout buffer at n_steps=48 to fix AssertionError
+    from stable_baselines3.common.buffers import RolloutBuffer
+    model.rollout_buffer = RolloutBuffer(
+        model.n_steps,
+        model.observation_space,
+        model.action_space,
+        device=model.device,
+        gamma=model.gamma,
+        gae_lambda=model.gae_lambda,
+        n_envs=model.n_envs,
+    )
     return model
 
 
+def _pretrain_from_csv(model, csv_path, label):
+    # Reconstruct observations and rewards from historical CSV data
+    # and run PPO gradient updates before live deployment begins.
+    if not os.path.exists(csv_path):
+        print(f"[INFO] [{label}] No historical CSV found, skipping pretrain.")
+        return
+
+    try:
+        df = pd.read_csv(csv_path, header=0)
+        df.columns = ["Timestamp", "Light_Pct", "Nutri_ml", "O2_Reading",
+                      "Biomass", "Daily_Budget_Left", "Half_Day_Used", "Lights_Off"]
+        df = df.dropna().reset_index(drop=True)
+
+        if len(df) < 48:
+            print(f"[INFO] [{label}] Not enough rows for a full pretrain batch, skipping.")
+            return
+
+        print(f"[INFO] [{label}] Pretraining from {len(df)} historical rows...")
+
+        o2_vals     = df["O2_Reading"].values.astype(np.float32)
+        light_vals  = df["Light_Pct"].values.astype(np.float32)
+        nutri_vals  = df["Nutri_ml"].values.astype(np.float32)
+        budget_vals = df["Daily_Budget_Left"].values.astype(np.float32)
+
+        observations, actions, rewards = [], [], []
+
+        for i in range(len(df)):
+            # Reconstruct full observation vector
+            o2_window   = o2_vals[max(0, i-2):i+1]
+            o2_trend    = (o2_window[-1] - o2_window[0]) / max(len(o2_window) - 1, 1)
+            o2_avg      = np.mean(o2_vals[max(0, i-9):i+1])
+            time_of_day = (i % 48) / 48.0
+            o2_trend_norm = np.clip((o2_trend + 5.0) / 10.0, 0, 1)
+
+            obs = np.array([
+                o2_vals[i] / 200.0,
+                o2_trend_norm,
+                o2_avg / 200.0,
+                budget_vals[i] / 4.0,
+                time_of_day
+            ], dtype=np.float32)
+
+            action = np.array([light_vals[i], nutri_vals[i]], dtype=np.float32)
+
+            # Recompute reward using same formula as training
+            light_eff = light_vals[i] / (light_vals[i] + 20.0 + (light_vals[i]**2 / 80.0) + 1e-6)
+            nutri      = nutri_vals[i]
+            o2_rate    = 150.0 * light_eff * (nutri / (nutri + 5.0 + 1e-6))
+            reward     = (o2_rate / 5.0) - (light_vals[i] * 0.005)
+            if o2_rate > 60:
+                reward += 10.0
+
+            observations.append(obs)
+            actions.append(action)
+            rewards.append(float(reward))
+
+        # Run gradient updates in 48-step batches
+        n_batches = len(observations) // 48
+        for b in range(n_batches):
+            obs_batch = np.array(observations[b*48:(b+1)*48])
+            act_batch = np.array(actions[b*48:(b+1)*48])
+            rew_batch = np.array(rewards[b*48:(b+1)*48])
+
+            buf = model.rollout_buffer
+            buf.reset()
+            for j in range(48):
+                obs_t = torch.tensor(obs_batch[j:j+1], dtype=torch.float32).to(model.device)
+                with torch.no_grad():
+                    val      = model.policy.predict_values(obs_t)
+                    dist     = model.policy.get_distribution(obs_t)
+                    act_t    = torch.tensor(act_batch[j:j+1], dtype=torch.float32).to(model.device)
+                    log_prob = dist.log_prob(act_t)
+
+                buf.add(
+                    obs_batch[j:j+1],
+                    act_batch[j:j+1],
+                    np.array([rew_batch[j]]),
+                    np.array([j < 47], dtype=np.float32),
+                    val,
+                    log_prob
+                )
+
+            last_obs_t = torch.tensor(obs_batch[-1:], dtype=torch.float32).to(model.device)
+            with torch.no_grad():
+                last_val = model.policy.predict_values(last_obs_t)
+            buf.compute_returns_and_advantage(last_values=last_val, dones=np.array([False]))
+            model.train()
+
+        print(f"[INFO] [{label}] Pretrained on {n_batches} batches.")
+
+    except Exception as e:
+        import traceback
+        print(f"[WARNING] [{label}] Pretrain failed: {e}")
+        traceback.print_exc()
+        print(f"[INFO] [{label}] Continuing without pretrain.")
+
+
 def _init_csv(path, headers):
-    """Write CSV header only if the file doesn't already exist.
-    This preserves historical data across restarts."""
     if not os.path.exists(path):
         with open(path, mode='w', newline='') as f:
             csv.writer(f).writerow(headers)
 
 
 def deploy_to_reactor():
-    global _static_last_injection, _static_last_day_reset
+    global _static_last_injection, _static_injections_since_reset
 
     initialize_leds()
 
-    # FIX: Only create CSV files with headers if they don't already exist.
-    # Previously used mode='w' which wiped all historical data on every restart.
+    # Only create CSV files if they don't already exist — preserves historical data
     _init_csv(CSV_CONTROL, ["Timestamp", "Light_Pct", "O2_Reading", "Lights_Off"])
     _init_csv(CSV_EXP2, ["Timestamp", "Light_Pct", "Nutri_ml", "O2_Reading",
                           "Biomass", "Daily_Budget_Left", "Half_Day_Used", "Lights_Off"])
@@ -516,25 +605,22 @@ def deploy_to_reactor():
     model_exp2.set_logger(configure(LOG_DIR, ["stdout", "csv"]))
     model_exp3.set_logger(configure(LOG_DIR, ["stdout", "csv"]))
 
+    # Pretrain from historical CSV data before live deployment
+    _pretrain_from_csv(model_exp2, CSV_EXP2, "EXP 2")
+    _pretrain_from_csv(model_exp3, CSV_EXP3, "EXP 3")
+
     print(f"[INFO] Logging EXP 2 to {CSV_EXP2}")
     print(f"[INFO] Logging EXP 3 to {CSV_EXP3}")
     print(f"[INFO] Logging CONTROL 2 to {CSV_CONTROL}")
     print("[INFO] Press Ctrl+C to stop and save.")
     print("[INFO] Making decisions every 30 minutes.\n")
 
-    # Two barriers keep agents in lockstep:
-    # barrier_end: both must finish acting before EXP2 sleeps
-    # barrier_start: both must wait until EXP2 wakes up before next step
     barrier_end   = threading.Barrier(2)
     barrier_start = threading.Barrier(2)
-
-    stop_event = threading.Event()
+    stop_event    = threading.Event()
 
     def run_exp2():
         try:
-            # FIX: total_timesteps set very high so learn() never tries to
-            # finalize training at an arbitrary cutoff with a partial buffer.
-            # Continual learning updates still happen every n_steps=48 (24hrs).
             model_exp2.learn(
                 total_timesteps=10_000_000,
                 callback=[
@@ -554,7 +640,6 @@ def deploy_to_reactor():
 
     def run_exp3():
         try:
-            # FIX: same as above for EXP 3
             model_exp3.learn(
                 total_timesteps=10_000_000,
                 callback=[

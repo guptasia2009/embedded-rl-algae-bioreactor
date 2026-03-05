@@ -1217,3 +1217,76 @@
 2026-03-04T18:55:12.992226 - [EXP 3] O2: 3.56 | Light: 2.2% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
 2026-03-04T18:55:12.994339 - LEDs [25, 26, 27] set to intensity 7
 2026-03-04T18:55:12.994675 - [EXP 2] O2: 9.57 | Light: 2.9% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+2026-03-04T19:25:14.041575 - LEDs [32, 33, 34] set to intensity 7
+2026-03-04T19:25:14.044692 - LEDs [38, 39, 40] set to intensity 191
+2026-03-04T19:25:14.544858 - Servo 2 dispensed 1.00mL
+2026-03-04T19:25:14.545107 - [EXP 3] O2: 7.81 | Light: 3.0% | Dispensed: 1.000ml | Budget: 3.00ml | Half-day used: 1.00ml | Lights off: False
+2026-03-04T19:25:14.545727 - Servo 3 dispensed 2.00mL
+2026-03-04T19:25:14.545823 - [CONTROL 2] Injected 2.0 ml nutrients
+2026-03-04T19:25:14.545897 - [CONTROL 2] O2: 9.81 | Light: 75.0% | Lights off: False
+2026-03-04T19:25:14.546354 - LEDs [25, 26, 27] set to intensity 9
+2026-03-04T19:25:14.546463 - [EXP 2] O2: 10.13 | Light: 3.8% | Dispensed: 0.000ml | Budget: 4.00ml | Half-day used: 0.00ml | Lights off: False
+2026-03-04T19:55:14.562921 - LEDs [32, 33, 34] set to intensity 15
+2026-03-04T19:55:14.563424 - [EXP 3] O2: 7.44 | Light: 6.2% | Dispensed: 0.000ml | Budget: 3.00ml | Half-day used: 1.00ml | Lights off: False
+2026-03-04T19:55:14.568043 - LEDs [38, 39, 40] set to intensity 191
+2026-03-04T19:55:14.568421 - [CONTROL 2] O2: 9.86 | Light: 75.0% | Lights off: False
+2026-03-04T19:55:14.570606 - LEDs [25, 26, 27] set to intensity 11
+2026-03-04T19:55:15.072680 - Servo 1 dispensed 1.00mL
+2026-03-04T19:55:15.073072 - [EXP 2] O2: 11.33 | Light: 4.3% | Dispensed: 1.000ml | Budget: 3.00ml | Half-day used: 1.00ml | Lights off: False
+2026-03-04T20:25:15.092313 - LEDs [32, 33, 34] set to intensity 15
+2026-03-04T20:25:15.094877 - LEDs [38, 39, 40] set to intensity 191
+2026-03-04T20:25:15.095481 - [CONTROL 2] O2: 10.01 | Light: 75.0% | Lights off: False
+2026-03-04T20:25:15.097456 - LEDs [25, 26, 27] set to intensity 14
+2026-03-04T20:25:15.602583 - Servo 2 dispensed 0.59mL
+2026-03-04T20:25:15.603004 - [EXP 3] O2: 7.49 | Light: 5.9% | Dispensed: 0.585ml | Budget: 2.41ml | Half-day used: 1.59ml | Lights off: False
+2026-03-04T20:25:15.603260 - Servo 1 dispensed 1.00mL
+2026-03-04T20:25:15.603545 - [EXP 2] O2: 12.72 | Light: 5.8% | Dispensed: 1.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+2026-03-04T20:55:15.623144 - LEDs [32, 33, 34] set to intensity 15
+2026-03-04T20:55:15.625702 - LEDs [38, 39, 40] set to intensity 191
+2026-03-04T20:55:15.626158 - [CONTROL 2] O2: 10.13 | Light: 75.0% | Lights off: False
+2026-03-04T20:55:15.628279 - LEDs [25, 26, 27] set to intensity 13
+2026-03-04T20:55:15.628910 - [EXP 2] O2: 15.28 | Light: 5.4% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+2026-03-04T20:55:16.130366 - Servo 2 dispensed 0.41mL
+2026-03-04T20:55:16.130804 - [EXP 3] O2: 7.45 | Light: 6.2% | Dispensed: 0.415ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+2026-03-04T21:25:16.147667 - LEDs [32, 33, 34] set to intensity 16
+2026-03-04T21:25:16.151606 - LEDs [38, 39, 40] set to intensity 191
+2026-03-04T21:25:16.150828 - [EXP 3] O2: 7.24 | Light: 6.5% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+2026-03-04T21:25:16.151996 - [CONTROL 2] O2: 10.47 | Light: 75.0% | Lights off: False
+2026-03-04T21:25:16.154180 - LEDs [25, 26, 27] set to intensity 15
+2026-03-04T21:25:16.154475 - [EXP 2] O2: 17.15 | Light: 5.9% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+2026-03-04T21:55:16.173586 - LEDs [38, 39, 40] set to intensity 191
+2026-03-04T21:55:16.176172 - LEDs [32, 33, 34] set to intensity 17
+2026-03-04T21:55:16.176634 - [CONTROL 2] O2: 10.42 | Light: 75.0% | Lights off: False
+2026-03-04T21:55:16.176776 - [EXP 3] O2: 6.77 | Light: 6.9% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+2026-03-04T21:55:16.178740 - LEDs [25, 26, 27] set to intensity 13
+2026-03-04T21:55:16.179010 - [EXP 2] O2: 19.07 | Light: 5.4% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+2026-03-04T22:25:16.196335 - LEDs [32, 33, 34] set to intensity 0
+2026-03-04T22:25:16.199623 - [EXP 3] O2: 6.78 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+2026-03-04T22:25:16.199400 - LEDs [38, 39, 40] set to intensity 0
+2026-03-04T22:25:16.200112 - [CONTROL 2] O2: 10.45 | Light: 0.0% | Lights off: True
+2026-03-04T22:25:16.201937 - LEDs [25, 26, 27] set to intensity 0
+2026-03-04T22:25:16.202454 - [EXP 2] O2: 21.59 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+2026-03-04T22:55:16.219229 - LEDs [38, 39, 40] set to intensity 0
+2026-03-04T22:55:16.219881 - [CONTROL 2] O2: 11.06 | Light: 0.0% | Lights off: True
+2026-03-04T22:55:16.221785 - LEDs [25, 26, 27] set to intensity 0
+2026-03-04T22:55:16.222535 - [EXP 2] O2: 22.27 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+2026-03-04T22:55:16.225671 - LEDs [32, 33, 34] set to intensity 0
+2026-03-04T22:55:16.226357 - [EXP 3] O2: 6.70 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+2026-03-04T23:25:16.241846 - LEDs [38, 39, 40] set to intensity 0
+2026-03-04T23:25:16.242909 - [CONTROL 2] O2: 11.15 | Light: 0.0% | Lights off: True
+2026-03-04T23:25:16.245062 - LEDs [25, 26, 27] set to intensity 0
+2026-03-04T23:25:16.245472 - [EXP 2] O2: 23.24 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+2026-03-04T23:25:16.249644 - LEDs [32, 33, 34] set to intensity 0
+2026-03-04T23:25:16.250150 - [EXP 3] O2: 6.67 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+2026-03-04T23:55:16.267540 - LEDs [38, 39, 40] set to intensity 0
+2026-03-04T23:55:16.268346 - [CONTROL 2] O2: 10.72 | Light: 0.0% | Lights off: True
+2026-03-04T23:55:16.270128 - LEDs [25, 26, 27] set to intensity 0
+2026-03-04T23:55:16.270617 - [EXP 2] O2: 23.11 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+2026-03-04T23:55:16.275197 - LEDs [32, 33, 34] set to intensity 0
+2026-03-04T23:55:16.275578 - [EXP 3] O2: 6.63 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+2026-03-05T00:25:16.297177 - LEDs [38, 39, 40] set to intensity 0
+2026-03-05T00:25:16.294570 - LEDs [32, 33, 34] set to intensity 0
+2026-03-05T00:25:16.297609 - [CONTROL 2] O2: 10.66 | Light: 0.0% | Lights off: True
+2026-03-05T00:25:16.297717 - [EXP 3] O2: 6.40 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+2026-03-05T00:25:16.299782 - LEDs [25, 26, 27] set to intensity 0
+2026-03-05T00:25:16.300245 - [EXP 2] O2: 23.50 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True

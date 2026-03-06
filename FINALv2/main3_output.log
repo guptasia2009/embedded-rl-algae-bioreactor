@@ -1,0 +1,1357 @@
+nohup: ignoring input
+
+
+List of found devices
+1: GDX-ODO 0N4033W9 USB 
+2: GDX-ODO 0N4033Z1 USB 
+3: GDX-ODO 0N403481 USB 
+
+
+- If connecting a single device, type the number (e.g., 1) that
+corresponds with the device, and then press 'enter'.
+- If connnecting multiple devices, type in each number
+separated with commas with no spaces(e.g., 1,2), and then 
+press 'enter': 
+
+
+
+List of sensors for GDX-ODO 0N4033W9 USB 
+1: DO Concentration (mg/L)
+2: DO Saturation (%)
+3: Temperature (Â°C)
+4: Pressure (kPa)
+5: DO Salinity (mg/L)
+
+
+- If connecting a single sensor, type the number (e.g., 1) that
+corresponds with the sensor, and then press 'enter'.
+- If connecting multiple sensors, type in each number
+separated with commas with no spaces(e.g., 1,2), and then 
+click 'enter': 
+
+List of sensors for GDX-ODO 0N4033Z1 USB 
+1: DO Concentration (mg/L)
+2: DO Saturation (%)
+3: Temperature (Â°C)
+4: Pressure (kPa)
+5: DO Salinity (mg/L)
+
+
+- If connecting a single sensor, type the number (e.g., 1) that
+corresponds with the sensor, and then press 'enter'.
+- If connecting multiple sensors, type in each number
+separated with commas with no spaces(e.g., 1,2), and then 
+click 'enter': 
+
+List of sensors for GDX-ODO 0N403481 USB 
+1: DO Concentration (mg/L)
+2: DO Saturation (%)
+3: Temperature (Â°C)
+4: Pressure (kPa)
+5: DO Salinity (mg/L)
+
+
+- If connecting a single sensor, type the number (e.g., 1) that
+corresponds with the sensor, and then press 'enter'.
+- If connecting multiple sensors, type in each number
+separated with commas with no spaces(e.g., 1,2), and then 
+click 'enter': 
+--- BIOREACTOR CONTROL ---
+1: Train model (200k steps, simulation)
+2: Run safety demo
+3: Deploy to hardware (EXP 2 + EXP 3 + CONTROL 2)
+4: Exit
+Select: [INFO] [EXP 2] Starting from base trained model...
+[INFO] [EXP 3] Starting from base trained model...
+[INFO] Deploying EXP 2 and EXP 3 with continual learning enabled.
+Wrapping the env in a DummyVecEnv.
+Wrapping the env in a DummyVecEnv.
+Logging to ./bioreactor_system/
+Logging to ./bioreactor_system/
+[INFO] [EXP 2] Pretraining from 96 historical rows...
+[INFO] [EXP 2] Pretrained on 2 batches.
+[INFO] [EXP 3] Pretraining from 96 historical rows...
+[INFO] [EXP 3] Pretrained on 2 batches.
+[INFO] Logging EXP 2 to ./bioreactor_system/deployment_history_EXP2.csv
+[INFO] Logging EXP 3 to ./bioreactor_system/deployment_history_EXP3.csv
+[INFO] Logging CONTROL 2 to ./bioreactor_system/deployment_history_CONTROL2.csv
+[INFO] Press Ctrl+C to stop and save.
+[INFO] Making decisions every 30 minutes.
+
+read_do(): [9.03483772277832, 9.443577766418457, 11.378669738769531]
+[CONTROL 2][HARDWARE] Injecting 2.0 ml nutrients
+read_do(): [9.036759376525879, 9.440916061401367, 11.383139610290527]
+[EXP 3][HARDWARE] Setting light to 4.18%
+[EXP 3][HARDWARE] Injecting 1.000 ml nutrients
+[CONTROL 2][2026-03-02 19:25:02] O2: 11.38 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.21%
+[EXP 2][HARDWARE] Injecting 0.513 ml nutrients
+[EXP 3][2026-03-02 19:25:02] O2: 9.44 | Light: 4.2% | Dispensed: 1.000ml | Budget: 3.00ml | Half-day used: 1.00ml | Lights off: False
+[EXP 2][2026-03-02 19:25:02] O2: 9.03 | Light: 4.2% | Dispensed: 0.513ml | Budget: 3.49ml | Half-day used: 0.51ml | Lights off: False
+read_do(): [8.861410140991211, 9.088644981384277, 11.571521759033203]
+[CONTROL 2][2026-03-02 19:55:03] O2: 11.57 | Light: 75.0% | Lights off: False
+read_do(): [8.86291217803955, 9.088075637817383, 11.568743705749512]
+[EXP 3][HARDWARE] Setting light to 6.99%
+[EXP 3][HARDWARE] Injecting 1.000 ml nutrients
+[EXP 2][HARDWARE] Setting light to 4.93%
+[EXP 2][HARDWARE] Injecting 1.000 ml nutrients
+[EXP 3][2026-03-02 19:55:03] O2: 9.09 | Light: 7.0% | Dispensed: 1.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][2026-03-02 19:55:03] O2: 8.86 | Light: 4.9% | Dispensed: 1.000ml | Budget: 2.49ml | Half-day used: 1.51ml | Lights off: False
+read_do(): [8.801928520202637, 9.108461380004883, 11.284965515136719]
+read_do(): [8.804838180541992, 9.107963562011719, 11.288248062133789]
+[EXP 3][HARDWARE] Setting light to 6.76%
+[EXP 3][2026-03-02 20:25:03] O2: 9.11 | Light: 6.8% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-02 20:25:03] O2: 11.29 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.73%
+[EXP 2][2026-03-02 20:25:03] O2: 8.80 | Light: 5.7% | Dispensed: 0.000ml | Budget: 2.49ml | Half-day used: 1.51ml | Lights off: False
+read_do(): [8.841769218444824, 8.974990844726562, 11.309739112854004]
+[EXP 3][HARDWARE] Setting light to 5.60%
+read_do(): [8.844354629516602, 8.97680950164795, 11.313094139099121]
+[EXP 3][2026-03-02 20:55:03] O2: 8.97 | Light: 5.6% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-02 20:55:03] O2: 11.31 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 7.13%
+[EXP 2][HARDWARE] Injecting 0.487 ml nutrients
+[EXP 2][2026-03-02 20:55:03] O2: 8.84 | Light: 7.1% | Dispensed: 0.487ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.790295600891113, 8.93736743927002, 11.17067813873291]
+[EXP 3][HARDWARE] Setting light to 6.63%
+read_do(): [8.790268898010254, 8.936885833740234, 11.193307876586914]
+[EXP 3][2026-03-02 21:25:04] O2: 8.94 | Light: 6.6% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-02 21:25:04] O2: 11.19 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 6.90%
+[EXP 2][2026-03-02 21:25:04] O2: 8.79 | Light: 6.9% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.942975044250488, 8.893725395202637, 11.48170280456543]
+read_do(): [8.942366600036621, 8.885119438171387, 11.478975296020508]
+[EXP 3][HARDWARE] Setting light to 7.58%
+[CONTROL 2][2026-03-02 21:55:04] O2: 11.48 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-02 21:55:04] O2: 8.89 | Light: 7.6% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.68%
+[EXP 2][2026-03-02 21:55:04] O2: 8.94 | Light: 5.7% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.953752517700195, 8.991386413574219, 12.292119026184082]
+read_do(): [8.963179588317871, 8.997462272644043, 12.297073364257812]
+[CONTROL 2][2026-03-02 22:25:04] O2: 12.29 | Light: 0.0% | Lights off: True
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-02 22:25:04] O2: 9.00 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-02 22:25:04] O2: 8.95 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.895408630371094, 8.841315269470215, 12.241345405578613]
+[CONTROL 2][2026-03-02 22:55:04] O2: 12.24 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-02 22:55:04] O2: 8.90 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.897311210632324, 8.840330123901367, 12.252364158630371]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-02 22:55:04] O2: 8.84 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.752612113952637, 8.827108383178711, 11.735668182373047]
+read_do(): [8.754334449768066, 8.828263282775879, 11.733194351196289]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[CONTROL 2][2026-03-02 23:25:04] O2: 11.73 | Light: 0.0% | Lights off: True
+[EXP 3][2026-03-02 23:25:04] O2: 8.83 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-02 23:25:04] O2: 8.75 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.682265281677246, 8.79926872253418, 11.661125183105469]
+[EXP 3][HARDWARE] Setting light to 0.00%
+read_do(): [8.681182861328125, 8.796164512634277, 11.660033226013184]
+[EXP 3][2026-03-02 23:55:04] O2: 8.80 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[CONTROL 2][2026-03-02 23:55:04] O2: 11.66 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-02 23:55:04] O2: 8.68 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.711677551269531, 8.730607986450195, 11.3323392868042]
+read_do(): [8.712006568908691, 8.731599807739258, 11.333589553833008]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[CONTROL 2][2026-03-03 00:25:04] O2: 11.33 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-03 00:25:04] O2: 8.73 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][2026-03-03 00:25:04] O2: 8.71 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.616698265075684, 8.669242858886719, 11.181502342224121]
+read_do(): [8.614727020263672, 8.668771743774414, 11.181563377380371]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-03 00:55:04] O2: 8.67 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[CONTROL 2][2026-03-03 00:55:04] O2: 11.18 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-03 00:55:04] O2: 8.62 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.653729438781738, 8.59682846069336, 10.92290210723877]
+read_do(): [8.656253814697266, 8.597557067871094, 10.924212455749512]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[CONTROL 2][2026-03-03 01:25:04] O2: 10.92 | Light: 0.0% | Lights off: True
+[EXP 3][2026-03-03 01:25:04] O2: 8.60 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-03 01:25:04] O2: 8.65 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.67825984954834, 8.502368927001953, 10.91299819946289]
+[EXP 3][HARDWARE] Setting light to 0.00%
+read_do(): [8.679692268371582, 8.502948760986328, 10.910636901855469]
+[EXP 3][2026-03-03 01:55:04] O2: 8.50 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[CONTROL 2][2026-03-03 01:55:04] O2: 10.91 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-03 01:55:04] O2: 8.68 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.706385612487793, 8.38504695892334, 10.651390075683594]
+[EXP 3][HARDWARE] Setting light to 0.00%
+read_do(): [8.707286834716797, 8.387287139892578, 10.650985717773438]
+[EXP 3][2026-03-03 02:25:04] O2: 8.39 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[CONTROL 2][2026-03-03 02:25:04] O2: 10.65 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-03 02:25:04] O2: 8.71 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.746556282043457, 8.297656059265137, 10.562873840332031]
+[CONTROL 2][2026-03-03 02:55:04] O2: 10.56 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-03 02:55:04] O2: 8.75 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.744959831237793, 8.303585052490234, 10.556363105773926]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-03 02:55:04] O2: 8.30 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.736161231994629, 8.348381042480469, 10.348830223083496]
+read_do(): [8.73593521118164, 8.351312637329102, 10.347058296203613]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[CONTROL 2][2026-03-03 03:25:04] O2: 10.35 | Light: 0.0% | Lights off: True
+[EXP 3][2026-03-03 03:25:04] O2: 8.35 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-03 03:25:04] O2: 8.74 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.72558879852295, 8.483335494995117, 10.40233039855957]
+read_do(): [8.723774909973145, 8.485118865966797, 10.402810096740723]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[CONTROL 2][2026-03-03 03:55:04] O2: 10.40 | Light: 0.0% | Lights off: True
+[EXP 3][2026-03-03 03:55:04] O2: 8.49 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-03 03:55:04] O2: 8.73 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.717906951904297, 8.5145263671875, 10.265610694885254]
+read_do(): [8.716598510742188, 8.51468563079834, 10.267218589782715]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[CONTROL 2][2026-03-03 04:25:04] O2: 10.27 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-03 04:25:04] O2: 8.51 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][2026-03-03 04:25:04] O2: 8.72 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.709177017211914, 8.594952583312988, 10.126097679138184]
+read_do(): [8.711372375488281, 8.595718383789062, 10.124410629272461]
+[CONTROL 2][2026-03-03 04:55:04] O2: 10.13 | Light: 0.0% | Lights off: True
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-03 04:55:04] O2: 8.60 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-03 04:55:04] O2: 8.71 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.720433235168457, 8.479138374328613, 10.065170288085938]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-03 05:25:04] O2: 8.48 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.722588539123535, 8.474347114562988, 10.067939758300781]
+[CONTROL 2][2026-03-03 05:25:04] O2: 10.07 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-03 05:25:04] O2: 8.72 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.730208396911621, 8.697017669677734, 9.895867347717285]
+[CONTROL 2][2026-03-03 05:55:04] O2: 9.90 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-03 05:55:04] O2: 8.73 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.72689437866211, 8.698899269104004, 9.897174835205078]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-03 05:55:04] O2: 8.70 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [8.737672805786133, 8.794533729553223, 9.850970268249512]
+[CONTROL 2][2026-03-03 06:25:04] O2: 9.85 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 3.72%
+read_do(): [8.737628936767578, 8.794251441955566, 9.848661422729492]
+[EXP 3][HARDWARE] Setting light to 5.42%
+[EXP 2][2026-03-03 06:25:04] O2: 8.74 | Light: 3.7% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 3][2026-03-03 06:25:04] O2: 8.79 | Light: 5.4% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.700039863586426, 8.788969039916992, 9.81839656829834]
+read_do(): [8.70201587677002, 8.784297943115234, 9.812167167663574]
+[EXP 3][HARDWARE] Setting light to 8.64%
+[CONTROL 2][2026-03-03 06:55:04] O2: 9.82 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-03 06:55:04] O2: 8.78 | Light: 8.6% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 6.22%
+[EXP 2][2026-03-03 06:55:04] O2: 8.70 | Light: 6.2% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.741104125976562, 8.790295600891113, 9.927385330200195]
+[EXP 3][HARDWARE] Setting light to 5.71%
+[EXP 3][2026-03-03 07:25:04] O2: 8.79 | Light: 5.7% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.738090515136719, 8.784971237182617, 9.930741310119629]
+[CONTROL 2][HARDWARE] Injecting 2.0 ml nutrients
+[CONTROL 2][HARDWARE] 4ml dispensed - resetting servo 3. Please refill syringe.
+[CONTROL 2][2026-03-03 07:25:04] O2: 9.93 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 7.13%
+[EXP 2][2026-03-03 07:25:04] O2: 8.74 | Light: 7.1% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.748210906982422, 8.885063171386719, 10.098567962646484]
+read_do(): [8.748981475830078, 8.884188652038574, 10.099099159240723]
+[EXP 3][HARDWARE] Setting light to 3.37%
+[EXP 3][2026-03-03 07:55:05] O2: 8.89 | Light: 3.4% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-03 07:55:05] O2: 10.10 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 6.29%
+[EXP 2][2026-03-03 07:55:05] O2: 8.75 | Light: 6.3% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.7537202835083, 8.854480743408203, 10.180344581604004]
+[EXP 3][HARDWARE] Setting light to 4.15%
+read_do(): [8.753592491149902, 8.854652404785156, 10.180747985839844]
+[EXP 3][2026-03-03 08:25:05] O2: 8.85 | Light: 4.1% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-03 08:25:05] O2: 10.18 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.59%
+[EXP 2][2026-03-03 08:25:05] O2: 8.75 | Light: 5.6% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.76993179321289, 8.858792304992676, 10.304214477539062]
+read_do(): [8.769340515136719, 8.861300468444824, 10.306587219238281]
+[EXP 3][HARDWARE] Setting light to 3.54%
+[CONTROL 2][2026-03-03 08:55:05] O2: 10.31 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 3.46%
+[EXP 2][2026-03-03 08:55:05] O2: 8.77 | Light: 3.5% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.769874572753906, 8.83471965789795, 10.305545806884766]
+read_do(): [8.771510124206543, 8.834114074707031, 10.308267593383789]
+[EXP 3][HARDWARE] Setting light to 3.57%
+[CONTROL 2][2026-03-03 09:25:05] O2: 10.31 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-03 09:25:05] O2: 8.83 | Light: 3.6% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 6.53%
+[EXP 2][2026-03-03 09:25:05] O2: 8.77 | Light: 6.5% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.738110542297363, 8.90182876586914, 10.550224304199219]
+read_do(): [8.738812446594238, 8.901127815246582, 10.552803993225098]
+[EXP 3][HARDWARE] Setting light to 6.09%
+[CONTROL 2][2026-03-03 09:55:05] O2: 10.55 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-03 09:55:05] O2: 8.90 | Light: 6.1% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.81%
+[EXP 2][2026-03-03 09:55:05] O2: 8.74 | Light: 4.8% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.737237930297852, 8.643720626831055, 10.602699279785156]
+[CONTROL 2][2026-03-03 10:25:05] O2: 10.60 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 3.49%
+[EXP 2][2026-03-03 10:25:05] O2: 8.74 | Light: 3.5% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.737664222717285, 8.639963150024414, 10.597538948059082]
+[EXP 3][HARDWARE] Setting light to 5.49%
+[EXP 3][2026-03-03 10:25:05] O2: 8.64 | Light: 5.5% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.691788673400879, 8.553271293640137, 10.664518356323242]
+[EXP 3][HARDWARE] Setting light to 4.65%
+[EXP 3][2026-03-03 10:55:05] O2: 8.55 | Light: 4.7% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.68931770324707, 8.532841682434082, 10.67367172241211]
+[CONTROL 2][2026-03-03 10:55:05] O2: 10.67 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.14%
+[EXP 2][2026-03-03 10:55:05] O2: 8.69 | Light: 5.1% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.795900344848633, 8.477254867553711, 10.92276382446289]
+[CONTROL 2][2026-03-03 11:25:05] O2: 10.92 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 2.98%
+[EXP 2][2026-03-03 11:25:05] O2: 8.80 | Light: 3.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.798344612121582, 8.473998069763184, 10.929476737976074]
+[EXP 3][HARDWARE] Setting light to 3.89%
+[EXP 3][2026-03-03 11:25:05] O2: 8.47 | Light: 3.9% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.743555068969727, 8.65567684173584, 10.880082130432129]
+[CONTROL 2][2026-03-03 11:55:05] O2: 10.88 | Light: 75.0% | Lights off: False
+read_do(): [8.743462562561035, 8.654557228088379, 10.877662658691406]
+[EXP 3][HARDWARE] Setting light to 3.35%
+[EXP 3][2026-03-03 11:55:05] O2: 8.65 | Light: 3.4% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.60%
+[EXP 2][2026-03-03 11:55:05] O2: 8.74 | Light: 5.6% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.760550498962402, 8.461825370788574, 10.819714546203613]
+read_do(): [8.760774612426758, 8.464926719665527, 10.818982124328613]
+[EXP 3][HARDWARE] Setting light to 3.91%
+[EXP 3][2026-03-03 12:25:05] O2: 8.46 | Light: 3.9% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-03 12:25:05] O2: 10.82 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 3.53%
+[EXP 2][2026-03-03 12:25:05] O2: 8.76 | Light: 3.5% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.80040454864502, 8.420456886291504, 10.82761287689209]
+read_do(): [8.797810554504395, 8.417102813720703, 10.828063011169434]
+[EXP 3][HARDWARE] Setting light to 6.91%
+[EXP 3][2026-03-03 12:55:06] O2: 8.42 | Light: 6.9% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-03 12:55:06] O2: 10.83 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 3.93%
+[EXP 2][2026-03-03 12:55:06] O2: 8.80 | Light: 3.9% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.770639419555664, 8.360998153686523, 10.874246597290039]
+read_do(): [8.770575523376465, 8.356905937194824, 10.8767728805542]
+[EXP 3][HARDWARE] Setting light to 3.16%
+[EXP 3][2026-03-03 13:25:06] O2: 8.36 | Light: 3.2% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-03 13:25:06] O2: 10.88 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.79%
+[EXP 2][2026-03-03 13:25:06] O2: 8.77 | Light: 4.8% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.770275115966797, 8.207537651062012, 10.903951644897461]
+[CONTROL 2][2026-03-03 13:55:06] O2: 10.90 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.77%
+[EXP 2][2026-03-03 13:55:06] O2: 8.77 | Light: 4.8% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.77094841003418, 8.211560249328613, 10.900566101074219]
+[EXP 3][HARDWARE] Setting light to 3.94%
+[EXP 3][2026-03-03 13:55:06] O2: 8.21 | Light: 3.9% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.762433052062988, 8.19742488861084, 10.768035888671875]
+[CONTROL 2][2026-03-03 14:25:06] O2: 10.77 | Light: 75.0% | Lights off: False
+read_do(): [8.764697074890137, 8.196950912475586, 10.770489692687988]
+[EXP 3][HARDWARE] Setting light to 4.52%
+[EXP 2][HARDWARE] Setting light to 4.01%
+[EXP 3][2026-03-03 14:25:06] O2: 8.20 | Light: 4.5% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][2026-03-03 14:25:06] O2: 8.76 | Light: 4.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.751202583312988, 8.121490478515625, 10.855155944824219]
+read_do(): [8.75023365020752, 8.123486518859863, 10.854951858520508]
+[EXP 3][HARDWARE] Setting light to 3.69%
+[CONTROL 2][2026-03-03 14:55:06] O2: 10.86 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-03 14:55:06] O2: 8.12 | Light: 3.7% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.54%
+[EXP 2][2026-03-03 14:55:06] O2: 8.75 | Light: 5.5% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.724998474121094, 8.031428337097168, 10.688619613647461]
+read_do(): [8.724872589111328, 8.030892372131348, 10.687274932861328]
+[EXP 3][HARDWARE] Setting light to 3.59%
+[EXP 3][2026-03-03 15:25:06] O2: 8.03 | Light: 3.6% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-03 15:25:06] O2: 10.69 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 3.44%
+[EXP 2][2026-03-03 15:25:06] O2: 8.72 | Light: 3.4% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.725852012634277, 7.956389427185059, 10.74910831451416]
+read_do(): [8.726061820983887, 7.955000877380371, 10.746337890625]
+[EXP 3][HARDWARE] Setting light to 5.36%
+[CONTROL 2][2026-03-03 15:55:06] O2: 10.75 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-03 15:55:06] O2: 7.96 | Light: 5.4% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.40%
+;¾ ½²T=±Ò=§_=ÔáU¾­@>'¸½)·Ì¾Ä­ =M¼,>¯pÞ¾>[H>S–¦¾Î‚8>¶Ö„;ú!Ä¾8mÀ¼ì™>¹	¾¿`>/²·¾¥¢¤½­	>>0[V>K=·=Ø¤Õ>ˆ‘`>M¥s>Y’n½  >s¶¿>)÷¾QËA¼[EXP 2][2026-03-03 15:55:06] O2: 8.73 | Light: 4.4% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.71927261352539, 7.946976661682129, 10.7936372756958]
+read_do(): [8.718757629394531, 7.9428815841674805, 10.792876243591309]
+[EXP 3][HARDWARE] Setting light to 5.00%
+[CONTROL 2][2026-03-03 16:25:06] O2: 10.79 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-03 16:25:06] O2: 7.95 | Light: 5.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.18%
+[EXP 2][2026-03-03 16:25:06] O2: 8.72 | Light: 4.2% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.651246070861816, 7.93742036819458, 10.692586898803711]
+read_do(): [8.650566101074219, 7.936577320098877, 10.693860054016113]
+[EXP 3][HARDWARE] Setting light to 4.01%
+[CONTROL 2][2026-03-03 16:55:06] O2: 10.69 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-03 16:55:06] O2: 7.94 | Light: 4.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 3.81%
+[EXP 2][2026-03-03 16:55:06] O2: 8.65 | Light: 3.8% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [8.644702911376953, 7.872220516204834, 10.839449882507324]
+read_do(): [8.644905090332031, 7.873244285583496, 10.837214469909668]
+[EXP 3][HARDWARE] Setting light to 5.97%
+[EXP 3][2026-03-03 17:25:06] O2: 7.87 | Light: 6.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-03 17:25:06] O2: 10.84 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.38%
+[EXP 2][2026-03-03 17:25:06] O2: 8.64 | Light: 4.4% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [9.03073787689209, 8.156964302062988, 10.977359771728516]
+read_do(): [9.030688285827637, 8.157301902770996, 10.976035118103027]
+[EXP 3][HARDWARE] Setting light to 4.90%
+[CONTROL 2][2026-03-03 17:55:06] O2: 10.98 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-03 17:55:06] O2: 8.16 | Light: 4.9% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.52%
+[EXP 2][2026-03-03 17:55:06] O2: 9.03 | Light: 5.5% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [9.302549362182617, 7.789981842041016, 11.117410659790039]
+read_do(): [9.303300857543945, 7.787731170654297, 11.118483543395996]
+[EXP 3][HARDWARE] Setting light to 5.82%
+[EXP 3][HARDWARE] End of day - resetting servo 2. Please refill syringe.
+[CONTROL 2][2026-03-03 18:25:06] O2: 11.12 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 1.59%
+[EXP 2][HARDWARE] End of day - resetting servo 1. Please refill syringe.
+[EXP 3][2026-03-03 18:25:06] O2: 7.79 | Light: 5.8% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][2026-03-03 18:25:06] O2: 9.30 | Light: 1.6% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [10.27371883392334, 7.832838535308838, 11.23002815246582]
+Step 48: New best reward: 13.61
+[EXP 3][HARDWARE] Setting light to 1.98%
+[EXP 3][2026-03-03 18:55:06] O2: 7.83 | Light: 2.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [10.272873878479004, 7.832414150238037, 11.22922420501709]
+Step 48: New best reward: 13.61
+[CONTROL 2][2026-03-03 18:55:06] O2: 11.23 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 2.00%
+[EXP 2][2026-03-03 18:55:06] O2: 10.27 | Light: 2.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 96           |
+|    ep_rew_mean          | 13.6         |
+| time/                   |              |
+|    fps                  | 0            |
+|    iterations           | 1            |
+|    time_elapsed         | 86404        |
+|    total_timesteps      | 200752       |
+| train/                  |              |
+|    approx_kl            | 0.0034994457 |
+|    clip_fraction        | 0.00556      |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -3.22        |
+|    explained_variance   | -0.0136      |
+|    learning_rate        | 0.0001       |
+|    loss                 | 61.6         |
+|    n_updates            | 765          |
+|    policy_gradient_loss | -0.00805     |
+|    std                  | 1.22         |
+|    value_loss           | 127          |
+------------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 96           |
+|    ep_rew_mean          | 13.6         |
+| time/                   |              |
+|    fps                  | 0            |
+|    iterations           | 1            |
+|    time_elapsed         | 86404        |
+|    total_timesteps      | 200752       |
+| train/                  |              |
+|    approx_kl            | 0.0021200266 |
+|    clip_fraction        | 0            |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -3.22        |
+|    explained_variance   | -0.0114      |
+|    learning_rate        | 0.0001       |
+|    loss                 | 57.6         |
+|    n_updates            | 765          |
+|    policy_gradient_loss | -0.0079      |
+|    std                  | 1.22         |
+|    value_loss           | 127          |
+------------------------------------------
+read_do(): [11.184932708740234, 7.5472412109375, 11.262158393859863]
+[EXP 3][HARDWARE] Setting light to 3.38%
+[EXP 3][HARDWARE] Injecting 0.691 ml nutrients
+read_do(): [11.186380386352539, 7.548273086547852, 11.260580062866211]
+[CONTROL 2][HARDWARE] Injecting 2.0 ml nutrients
+[EXP 3][2026-03-03 19:25:07] O2: 7.55 | Light: 3.4% | Dispensed: 0.691ml | Budget: 1.31ml | Half-day used: 0.69ml | Lights off: False
+[CONTROL 2][2026-03-03 19:25:07] O2: 11.26 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 1.59%
+[EXP 2][HARDWARE] Injecting 1.000 ml nutrients
+[EXP 2][2026-03-03 19:25:07] O2: 11.19 | Light: 1.6% | Dispensed: 1.000ml | Budget: 1.00ml | Half-day used: 1.00ml | Lights off: False
+read_do(): [13.061478614807129, 7.912906169891357, 11.4168701171875]
+read_do(): [13.059379577636719, 7.9123053550720215, 11.413199424743652]
+[EXP 3][HARDWARE] Setting light to 4.63%
+[EXP 3][HARDWARE] Injecting 0.816 ml nutrients
+[CONTROL 2][2026-03-03 19:55:08] O2: 11.41 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 3.52%
+[EXP 2][HARDWARE] Injecting 1.000 ml nutrients
+[EXP 3][2026-03-03 19:55:08] O2: 7.91 | Light: 4.6% | Dispensed: 0.816ml | Budget: 0.49ml | Half-day used: 1.51ml | Lights off: False
+[EXP 2][2026-03-03 19:55:08] O2: 13.06 | Light: 3.5% | Dispensed: 1.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [13.880352020263672, 8.613423347473145, 11.53525161743164]
+[EXP 3][HARDWARE] Setting light to 5.56%
+read_do(): [13.879908561706543, 8.6126070022583, 11.537684440612793]
+[EXP 3][HARDWARE] Injecting 0.040 ml nutrients
+[CONTROL 2][2026-03-03 20:25:09] O2: 11.54 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.87%
+[EXP 2][2026-03-03 20:25:09] O2: 13.88 | Light: 5.9% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 3][2026-03-03 20:25:09] O2: 8.61 | Light: 5.6% | Dispensed: 0.040ml | Budget: 0.45ml | Half-day used: 1.55ml | Lights off: False
+read_do(): [15.07702922821045, 8.10697078704834, 11.61369800567627]
+[CONTROL 2][2026-03-03 20:55:09] O2: 11.61 | Light: 75.0% | Lights off: False
+read_do(): [15.06530475616455, 8.12673282623291, 11.640205383300781]
+[EXP 3][HARDWARE] Setting light to 7.38%
+[EXP 3][HARDWARE] Injecting 0.453 ml nutrients
+[EXP 2][HARDWARE] Setting light to 5.34%
+[EXP 2][2026-03-03 20:55:09] O2: 15.08 | Light: 5.3% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 3][2026-03-03 20:55:09] O2: 8.13 | Light: 7.4% | Dispensed: 0.453ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [16.50830078125, 8.09627628326416, 11.640902519226074]
+read_do(): [16.514318466186523, 8.098969459533691, 11.634256362915039]
+[EXP 3][HARDWARE] Setting light to 4.49%
+[CONTROL 2][2026-03-03 21:25:10] O2: 11.63 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-03 21:25:10] O2: 8.10 | Light: 4.5% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 6.08%
+[EXP 2][2026-03-03 21:25:10] O2: 16.51 | Light: 6.1% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [17.934818267822266, 7.604635715484619, 11.903326034545898]
+[CONTROL 2][2026-03-03 21:55:10] O2: 11.90 | Light: 75.0% | Lights off: False
+read_do(): [17.941204071044922, 7.606136322021484, 11.900117874145508]
+[EXP 2][HARDWARE] Setting light to 5.49%
+[EXP 3][HARDWARE] Setting light to 6.11%
+[EXP 2][2026-03-03 21:55:10] O2: 17.93 | Light: 5.5% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 3][2026-03-03 21:55:10] O2: 7.61 | Light: 6.1% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [19.18094825744629, 7.225557804107666, 11.736713409423828]
+read_do(): [19.182096481323242, 7.221925258636475, 11.741386413574219]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-03 22:25:10] O2: 7.23 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[CONTROL 2][2026-03-03 22:25:10] O2: 11.74 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-03 22:25:10] O2: 19.18 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [20.330123901367188, 6.935464382171631, 11.843731880187988]
+read_do(): [20.33814239501953, 6.937307834625244, 11.845593452453613]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-03 22:55:10] O2: 6.94 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[CONTROL 2][2026-03-03 22:55:10] O2: 11.84 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-03 22:55:10] O2: 20.33 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [20.52626609802246, 6.6238694190979, 11.714021682739258]
+read_do(): [20.523765563964844, 6.623152256011963, 11.700557708740234]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-03 23:25:10] O2: 6.62 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[CONTROL 2][2026-03-03 23:25:10] O2: 11.70 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-03 23:25:10] O2: 20.52 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [22.738040924072266, 6.156882286071777, 11.562820434570312]
+[EXP 3][HARDWARE] Setting light to 0.00%
+read_do(): [22.733341217041016, 6.1591081619262695, 11.55188274383545]
+[EXP 3][2026-03-03 23:55:10] O2: 6.16 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[CONTROL 2][2026-03-03 23:55:10] O2: 11.55 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-03 23:55:10] O2: 22.73 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [23.006807327270508, 5.69329833984375, 11.371011734008789]
+read_do(): [23.010793685913086, 5.693492412567139, 11.366168022155762]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[CONTROL 2][2026-03-04 00:25:10] O2: 11.37 | Light: 0.0% | Lights off: True
+[EXP 3][2026-03-04 00:25:10] O2: 5.69 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-04 00:25:10] O2: 23.01 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [21.547889709472656, 5.168104648590088, 11.171298027038574]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-04 00:55:10] O2: 5.17 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [21.546703338623047, 5.1678786277771, 11.172767639160156]
+[CONTROL 2][2026-03-04 00:55:10] O2: 11.17 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-04 00:55:10] O2: 21.55 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [20.76876449584961, 4.721503734588623, 10.608048439025879]
+read_do(): [20.770164489746094, 4.721738815307617, 10.603218078613281]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[CONTROL 2][2026-03-04 01:25:10] O2: 10.60 | Light: 0.0% | Lights off: True
+[EXP 3][2026-03-04 01:25:10] O2: 4.72 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-04 01:25:10] O2: 20.77 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [20.37224769592285, 4.321523189544678, 10.214560508728027]
+[EXP 3][HARDWARE] Setting light to 0.00%
+read_do(): [20.370542526245117, 4.321353435516357, 10.213470458984375]
+[EXP 3][2026-03-04 01:55:10] O2: 4.32 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[CONTROL 2][2026-03-04 01:55:10] O2: 10.21 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-04 01:55:10] O2: 20.37 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [19.991619110107422, 4.216907024383545, 9.804082870483398]
+[CONTROL 2][2026-03-04 02:25:10] O2: 9.80 | Light: 0.0% | Lights off: True
+read_do(): [19.989665985107422, 4.217579364776611, 9.801542282104492]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-04 02:25:10] O2: 19.99 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 3][2026-03-04 02:25:10] O2: 4.22 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [19.29869842529297, 4.474416255950928, 9.880520820617676]
+[CONTROL 2][2026-03-04 02:55:10] O2: 9.88 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+read_do(): [19.288558959960938, 4.47357702255249, 9.882272720336914]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-04 02:55:10] O2: 19.30 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 3][2026-03-04 02:55:10] O2: 4.47 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [17.80181884765625, 4.634766101837158, 9.811038970947266]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-04 03:25:10] O2: 4.63 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [17.804014205932617, 4.63743257522583, 9.811816215515137]
+[CONTROL 2][2026-03-04 03:25:10] O2: 9.81 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-04 03:25:10] O2: 17.80 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [16.383699417114258, 4.8204874992370605, 9.712924003601074]
+[CONTROL 2][2026-03-04 03:55:10] O2: 9.71 | Light: 0.0% | Lights off: True
+read_do(): [16.38335418701172, 4.821846008300781, 9.712359428405762]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-04 03:55:10] O2: 4.82 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-04 03:55:10] O2: 16.38 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [15.407305717468262, 5.131963729858398, 9.798754692077637]
+[EXP 3][HARDWARE] Setting light to 0.00%
+read_do(): [15.404258728027344, 5.131906032562256, 9.798138618469238]
+[EXP 3][2026-03-04 04:25:10] O2: 5.13 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[CONTROL 2][2026-03-04 04:25:10] O2: 9.80 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-04 04:25:10] O2: 15.40 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [14.850156784057617, 5.259827613830566, 9.722522735595703]
+read_do(): [14.854015350341797, 5.259629249572754, 9.721421241760254]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-04 04:55:10] O2: 5.26 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[CONTROL 2][2026-03-04 04:55:10] O2: 9.72 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-04 04:55:10] O2: 14.85 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [14.629100799560547, 5.4516987800598145, 9.689342498779297]
+read_do(): [14.63171672821045, 5.453611850738525, 9.690628051757812]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[CONTROL 2][2026-03-04 05:25:10] O2: 9.69 | Light: 0.0% | Lights off: True
+[EXP 3][2026-03-04 05:25:10] O2: 5.45 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-04 05:25:10] O2: 14.63 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [14.369302749633789, 5.562242031097412, 9.6226224899292]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-04 05:55:10] O2: 5.56 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [14.372610092163086, 5.561220169067383, 9.621379852294922]
+[CONTROL 2][2026-03-04 05:55:10] O2: 9.62 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-04 05:55:10] O2: 14.37 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [14.06412410736084, 5.5827531814575195, 9.581984519958496]
+[CONTROL 2][2026-03-04 06:25:10] O2: 9.58 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.99%
+[EXP 2][2026-03-04 06:25:10] O2: 14.06 | Light: 6.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [14.065503120422363, 5.582242012023926, 9.583154678344727]
+[EXP 3][HARDWARE] Setting light to 3.59%
+[EXP 3][2026-03-04 06:25:10] O2: 5.58 | Light: 3.6% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [13.855764389038086, 5.383544445037842, 9.54763126373291]
+read_do(): [13.857293128967285, 5.383813381195068, 9.554156303405762]
+[EXP 3][HARDWARE] Setting light to 3.61%
+[EXP 3][2026-03-04 06:55:10] O2: 5.38 | Light: 3.6% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-04 06:55:10] O2: 9.55 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.24%
+[EXP 2][2026-03-04 06:55:10] O2: 13.86 | Light: 4.2% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [13.607431411743164, 5.3430280685424805, 9.527876853942871]
+[CONTROL 2][HARDWARE] Injecting 2.0 ml nutrients
+read_do(): [13.607564926147461, 5.343057632446289, 9.529912948608398]
+[EXP 3][HARDWARE] Setting light to 3.75%
+[EXP 3][2026-03-04 07:25:10] O2: 5.34 | Light: 3.7% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][HARDWARE] 4ml dispensed - resetting servo 3. Please refill syringe.
+[CONTROL 2][2026-03-04 07:25:10] O2: 9.53 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.89%
+[EXP 2][2026-03-04 07:25:10] O2: 13.61 | Light: 5.9% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [13.489001274108887, 5.205600261688232, 9.589667320251465]
+read_do(): [13.487895965576172, 5.20672607421875, 9.585906028747559]
+[EXP 3][HARDWARE] Setting light to 3.88%
+[EXP 3][2026-03-04 07:55:11] O2: 5.21 | Light: 3.9% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-04 07:55:11] O2: 9.59 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.07%
+[EXP 2][2026-03-04 07:55:11] O2: 13.49 | Light: 5.1% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [13.257319450378418, 4.980966567993164, 9.472247123718262]
+[CONTROL 2][2026-03-04 08:25:11] O2: 9.47 | Light: 75.0% | Lights off: False
+read_do(): [13.256393432617188, 4.979742527008057, 9.474017143249512]
+[EXP 3][HARDWARE] Setting light to 5.21%
+[EXP 2][HARDWARE] Setting light to 4.56%
+[EXP 3][2026-03-04 08:25:11] O2: 4.98 | Light: 5.2% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][2026-03-04 08:25:11] O2: 13.26 | Light: 4.6% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [12.913494110107422, 4.7956953048706055, 9.484341621398926]
+read_do(): [12.910714149475098, 4.796339988708496, 9.484102249145508]
+[EXP 3][HARDWARE] Setting light to 3.20%
+[EXP 3][2026-03-04 08:55:12] O2: 4.80 | Light: 3.2% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-04 08:55:12] O2: 9.48 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.02%
+[EXP 2][2026-03-04 08:55:12] O2: 12.91 | Light: 4.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [12.682551383972168, 4.514073371887207, 9.471277236938477]
+[EXP 3][HARDWARE] Setting light to 1.05%
+[EXP 3][2026-03-04 09:25:12] O2: 4.51 | Light: 1.1% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [12.674102783203125, 4.512854099273682, 9.478531837463379]
+[CONTROL 2][2026-03-04 09:25:12] O2: 9.48 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 2.75%
+[EXP 2][2026-03-04 09:25:12] O2: 12.67 | Light: 2.8% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [12.495833396911621, 3.9529056549072266, 9.504803657531738]
+read_do(): [12.496415138244629, 3.9519500732421875, 9.50566577911377]
+[EXP 3][HARDWARE] Setting light to 5.36%
+[CONTROL 2][2026-03-04 09:55:12] O2: 9.51 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-04 09:55:12] O2: 3.95 | Light: 5.4% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.19%
+[EXP 2][2026-03-04 09:55:12] O2: 12.50 | Light: 4.2% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [12.119466781616211, 3.3311567306518555, 9.667312622070312]
+[EXP 3][HARDWARE] Setting light to 3.53%
+[EXP 3][2026-03-04 10:25:12] O2: 3.33 | Light: 3.5% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [12.12253189086914, 3.3293840885162354, 9.672266006469727]
+[CONTROL 2][2026-03-04 10:25:12] O2: 9.67 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 2.81%
+[EXP 2][2026-03-04 10:25:12] O2: 12.12 | Light: 2.8% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [11.856782913208008, 3.2389321327209473, 9.579822540283203]
+[EXP 3][HARDWARE] Setting light to 2.34%
+read_do(): [11.856671333312988, 3.2377748489379883, 9.575882911682129]
+[EXP 3][2026-03-04 10:55:12] O2: 3.24 | Light: 2.3% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-04 10:55:12] O2: 9.58 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 1.97%
+[EXP 2][2026-03-04 10:55:12] O2: 11.86 | Light: 2.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [11.5569486618042, 2.922011613845825, 9.716944694519043]
+[EXP 3][HARDWARE] Setting light to 0.80%
+[EXP 3][2026-03-04 11:25:12] O2: 2.92 | Light: 0.8% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [11.557310104370117, 2.9216225147247314, 9.717256546020508]
+[CONTROL 2][2026-03-04 11:25:12] O2: 9.72 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.00%
+[EXP 2][2026-03-04 11:25:12] O2: 11.56 | Light: 4.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [11.334890365600586, 2.5912256240844727, 9.690020561218262]
+[EXP 3][HARDWARE] Setting light to 1.61%
+[EXP 3][2026-03-04 11:55:12] O2: 2.59 | Light: 1.6% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [11.334574699401855, 2.591217279434204, 9.691838264465332]
+[CONTROL 2][2026-03-04 11:55:12] O2: 9.69 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.21%
+[EXP 2][2026-03-04 11:55:12] O2: 11.33 | Light: 5.2% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [11.254389762878418, 2.607800245285034, 9.692070960998535]
+read_do(): [11.250049591064453, 2.606621503829956, 9.689323425292969]
+[EXP 3][HARDWARE] Setting light to 2.44%
+[CONTROL 2][2026-03-04 12:25:12] O2: 9.69 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-04 12:25:12] O2: 2.61 | Light: 2.4% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 3.39%
+[EXP 2][2026-03-04 12:25:12] O2: 11.25 | Light: 3.4% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [11.185049057006836, 2.3985984325408936, 9.736605644226074]
+read_do(): [11.182156562805176, 2.398948907852173, 9.732827186584473]
+[EXP 3][HARDWARE] Setting light to 3.13%
+[EXP 3][2026-03-04 12:55:12] O2: 2.40 | Light: 3.1% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-04 12:55:12] O2: 9.73 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 0.85%
+[EXP 2][2026-03-04 12:55:12] O2: 11.18 | Light: 0.9% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [11.049152374267578, 2.3575336933135986, 9.7536039352417]
+read_do(): [11.048600196838379, 2.3571674823760986, 9.756614685058594]
+[EXP 3][HARDWARE] Setting light to 0.45%
+[EXP 3][2026-03-04 13:25:12] O2: 2.36 | Light: 0.5% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-04 13:25:12] O2: 9.75 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.25%
+[EXP 2][2026-03-04 13:25:12] O2: 11.05 | Light: 4.2% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [10.936984062194824, 2.0728182792663574, 9.721307754516602]
+[CONTROL 2][2026-03-04 13:55:12] O2: 9.72 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 2.38%
+[EXP 2][2026-03-04 13:55:12] O2: 10.94 | Light: 2.4% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [10.937715530395508, 2.0729849338531494, 9.723237037658691]
+[EXP 3][HARDWARE] Setting light to 4.34%
+[EXP 3][2026-03-04 13:55:12] O2: 2.07 | Light: 4.3% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [10.766716003417969, 2.027146100997925, 9.7947359085083]
+[EXP 3][HARDWARE] Setting light to 2.31%
+read_do(): [10.766958236694336, 2.0266878604888916, 9.790020942687988]
+[EXP 3][2026-03-04 14:25:12] O2: 2.03 | Light: 2.3% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-04 14:25:12] O2: 9.79 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 3.55%
+[EXP 2][2026-03-04 14:25:12] O2: 10.77 | Light: 3.5% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [10.629152297973633, 2.024415969848633, 9.766969680786133]
+[CONTROL 2][2026-03-04 14:55:12] O2: 9.77 | Light: 75.0% | Lights off: False
+read_do(): [10.628242492675781, 2.0240328311920166, 9.767082214355469]
+[EXP 3][HARDWARE] Setting light to 4.01%
+[EXP 2][HARDWARE] Setting light to 3.65%
+[EXP 3][2026-03-04 14:55:12] O2: 2.02 | Light: 4.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][2026-03-04 14:55:12] O2: 10.63 | Light: 3.7% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [10.515049934387207, 2.1638169288635254, 9.815685272216797]
+[CONTROL 2][2026-03-04 15:25:12] O2: 9.82 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 2.58%
+[EXP 2][2026-03-04 15:25:12] O2: 10.52 | Light: 2.6% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [10.517099380493164, 2.1631391048431396, 9.813231468200684]
+[EXP 3][HARDWARE] Setting light to 1.13%
+[EXP 3][2026-03-04 15:25:12] O2: 2.16 | Light: 1.1% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [10.389742851257324, 2.22282338142395, 9.67086410522461]
+read_do(): [10.387420654296875, 2.222902297973633, 9.673118591308594]
+[EXP 3][HARDWARE] Setting light to 1.71%
+[CONTROL 2][2026-03-04 15:55:12] O2: 9.67 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-04 15:55:12] O2: 2.22 | Light: 1.7% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 3.39%
+[EXP 2][2026-03-04 15:55:12] O2: 10.39 | Light: 3.4% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [10.299762725830078, 2.2891581058502197, 9.78079605102539]
+[EXP 3][HARDWARE] Setting light to 0.88%
+[EXP 3][2026-03-04 16:25:12] O2: 2.29 | Light: 0.9% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [10.297470092773438, 2.289494276046753, 9.780403137207031]
+[CONTROL 2][2026-03-04 16:25:12] O2: 9.78 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 2.03%
+[EXP 2][2026-03-04 16:25:12] O2: 10.30 | Light: 2.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [10.158276557922363, 2.456519603729248, 9.782064437866211]
+read_do(): [10.159921646118164, 2.456195592880249, 9.78463077545166]
+[EXP 3][HARDWARE] Setting light to 1.40%
+[EXP 3][2026-03-04 16:55:12] O2: 2.46 | Light: 1.4% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-04 16:55:12] O2: 9.78 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to -0.10%
+[EXP 2][2026-03-04 16:55:12] O2: 10.16 | Light: -0.1% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [9.952071189880371, 2.4304685592651367, 9.781015396118164]
+read_do(): [9.950331687927246, 2.4309229850769043, 9.78066635131836]
+[EXP 3][HARDWARE] Setting light to 1.90%
+[CONTROL 2][2026-03-04 17:25:12] O2: 9.78 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-04 17:25:12] O2: 2.43 | Light: 1.9% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.01%
+[EXP 2][2026-03-04 17:25:12] O2: 9.95 | Light: 4.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [9.730520248413086, 2.696483612060547, 9.929145812988281]
+[EXP 3][HARDWARE] Setting light to 0.22%
+[EXP 3][2026-03-04 17:55:12] O2: 2.70 | Light: 0.2% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [9.731609344482422, 2.6961874961853027, 9.924378395080566]
+[CONTROL 2][2026-03-04 17:55:12] O2: 9.92 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 1.69%
+[EXP 2][2026-03-04 17:55:12] O2: 9.73 | Light: 1.7% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [9.52963638305664, 5.891205787658691, 9.965693473815918]
+read_do(): [9.531211853027344, 5.88775110244751, 9.964632987976074]
+[EXP 3][HARDWARE] Setting light to 1.55%
+[EXP 3][HARDWARE] End of day - resetting servo 2. Please refill syringe.
+[CONTROL 2][2026-03-04 18:25:12] O2: 9.97 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 2.62%
+[EXP 2][HARDWARE] End of day - resetting servo 1. Please refill syringe.
+[EXP 3][2026-03-04 18:25:12] O2: 5.89 | Light: 1.6% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][2026-03-04 18:25:12] O2: 9.53 | Light: 2.6% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [9.571420669555664, 3.5626983642578125, 10.063471794128418]
+read_do(): [9.56999397277832, 3.563398599624634, 10.059391021728516]
+[EXP 3][HARDWARE] Setting light to 2.23%
+[EXP 3][2026-03-04 18:55:12] O2: 3.56 | Light: 2.2% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-04 18:55:12] O2: 10.06 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 2.92%
+[EXP 2][2026-03-04 18:55:12] O2: 9.57 | Light: 2.9% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 96           |
+|    ep_rew_mean          | 13.5         |
+| time/                   |              |
+|    fps                  | 0            |
+|    iterations           | 2            |
+|    time_elapsed         | 172810       |
+|    total_timesteps      | 200800       |
+| train/                  |              |
+|    approx_kl            | 0.0019410886 |
+|    clip_fraction        | 0            |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -3.22        |
+|    explained_variance   | -0.815       |
+|    learning_rate        | 0.0001       |
+|    loss                 | -0.0778      |
+|    n_updates            | 780          |
+|    policy_gradient_loss | -0.0033      |
+|    std                  | 1.22         |
+|    value_loss           | 0.279        |
+------------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 96          |
+|    ep_rew_mean          | 13.5        |
+| time/                   |             |
+|    fps                  | 0           |
+|    iterations           | 2           |
+|    time_elapsed         | 172810      |
+|    total_timesteps      | 200800      |
+| train/                  |             |
+|    approx_kl            | 0.013555204 |
+|    clip_fraction        | 0.0542      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -3.22       |
+|    explained_variance   | -0.321      |
+|    learning_rate        | 0.0001      |
+|    loss                 | -0.138      |
+|    n_updates            | 780         |
+|    policy_gradient_loss | -0.0145     |
+|    std                  | 1.22        |
+|    value_loss           | 0.267       |
+-----------------------------------------
+read_do(): [10.124201774597168, 7.8110032081604, 9.822789192199707]
+[EXP 3][HARDWARE] Setting light to 3.00%
+[EXP 3][HARDWARE] Injecting 1.000 ml nutrients
+read_do(): [10.125506401062012, 7.817172527313232, 9.810647010803223]
+[CONTROL 2][HARDWARE] Injecting 2.0 ml nutrients
+[EXP 3][2026-03-04 19:25:14] O2: 7.81 | Light: 3.0% | Dispensed: 1.000ml | Budget: 3.00ml | Half-day used: 1.00ml | Lights off: False
+[CONTROL 2][2026-03-04 19:25:14] O2: 9.81 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 3.84%
+[EXP 2][2026-03-04 19:25:14] O2: 10.13 | Light: 3.8% | Dispensed: 0.000ml | Budget: 4.00ml | Half-day used: 0.00ml | Lights off: False
+read_do(): [11.333425521850586, 7.4415764808654785, 9.866802215576172]
+[EXP 3][HARDWARE] Setting light to 6.18%
+[EXP 3][2026-03-04 19:55:14] O2: 7.44 | Light: 6.2% | Dispensed: 0.000ml | Budget: 3.00ml | Half-day used: 1.00ml | Lights off: False
+read_do(): [11.328911781311035, 7.442378997802734, 9.862963676452637]
+[CONTROL 2][2026-03-04 19:55:14] O2: 9.86 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.33%
+[EXP 2][HARDWARE] Injecting 1.000 ml nutrients
+[EXP 2][2026-03-04 19:55:14] O2: 11.33 | Light: 4.3% | Dispensed: 1.000ml | Budget: 3.00ml | Half-day used: 1.00ml | Lights off: False
+read_do(): [12.712578773498535, 7.494414329528809, 10.00875186920166]
+read_do(): [12.717588424682617, 7.4944047927856445, 10.007536888122559]
+[EXP 3][HARDWARE] Setting light to 5.93%
+[EXP 3][HARDWARE] Injecting 0.585 ml nutrients
+[CONTROL 2][2026-03-04 20:25:15] O2: 10.01 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.77%
+[EXP 2][HARDWARE] Injecting 1.000 ml nutrients
+[EXP 3][2026-03-04 20:25:15] O2: 7.49 | Light: 5.9% | Dispensed: 0.585ml | Budget: 2.41ml | Half-day used: 1.59ml | Lights off: False
+[EXP 2][2026-03-04 20:25:15] O2: 12.72 | Light: 5.8% | Dispensed: 1.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [15.270800590515137, 7.4491376876831055, 10.131574630737305]
+read_do(): [15.276071548461914, 7.442018985748291, 10.129386901855469]
+[EXP 3][HARDWARE] Setting light to 6.16%
+[CONTROL 2][2026-03-04 20:55:15] O2: 10.13 | Light: 75.0% | Lights off: False
+[EXP 3][HARDWARE] Injecting 0.415 ml nutrients
+[EXP 2][HARDWARE] Setting light to 5.36%
+[EXP 2][2026-03-04 20:55:15] O2: 15.28 | Light: 5.4% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 3][2026-03-04 20:55:15] O2: 7.45 | Light: 6.2% | Dispensed: 0.415ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [17.138940811157227, 7.241687774658203, 10.471394538879395]
+[EXP 3][HARDWARE] Setting light to 6.49%
+read_do(): [17.14830207824707, 7.24029541015625, 10.468674659729004]
+[EXP 3][2026-03-04 21:25:16] O2: 7.24 | Light: 6.5% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-04 21:25:16] O2: 10.47 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.92%
+[EXP 2][2026-03-04 21:25:16] O2: 17.15 | Light: 5.9% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [19.06555938720703, 6.768486499786377, 10.438304901123047]
+read_do(): [19.07013511657715, 6.769207000732422, 10.424710273742676]
+[EXP 3][HARDWARE] Setting light to 6.89%
+[CONTROL 2][2026-03-04 21:55:16] O2: 10.42 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-04 21:55:16] O2: 6.77 | Light: 6.9% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.39%
+[EXP 2][2026-03-04 21:55:16] O2: 19.07 | Light: 5.4% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [21.590167999267578, 6.777700901031494, 10.454066276550293]
+[EXP 3][HARDWARE] Setting light to 0.00%
+read_do(): [21.58702278137207, 6.775996208190918, 10.450913429260254]
+[EXP 3][2026-03-04 22:25:16] O2: 6.78 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[CONTROL 2][2026-03-04 22:25:16] O2: 10.45 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-04 22:25:16] O2: 21.59 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [22.267486572265625, 6.7017316818237305, 11.056002616882324]
+[CONTROL 2][2026-03-04 22:55:16] O2: 11.06 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-04 22:55:16] O2: 22.27 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [22.272079467773438, 6.701496124267578, 11.055073738098145]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-04 22:55:16] O2: 6.70 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [23.244997024536133, 6.678430080413818, 11.15485668182373]
+[CONTROL 2][2026-03-04 23:25:16] O2: 11.15 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-04 23:25:16] O2: 23.24 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [23.249366760253906, 6.674289703369141, 11.161445617675781]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-04 23:25:16] O2: 6.67 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [23.113245010375977, 6.632620334625244, 10.720160484313965]
+[CONTROL 2][2026-03-04 23:55:16] O2: 10.72 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-04 23:55:16] O2: 23.11 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [23.114721298217773, 6.634008884429932, 10.711431503295898]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-04 23:55:16] O2: 6.63 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [23.499191284179688, 6.404357433319092, 10.661659240722656]
+read_do(): [23.5057315826416, 6.4031081199646, 10.662665367126465]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[CONTROL 2][2026-03-05 00:25:16] O2: 10.66 | Light: 0.0% | Lights off: True
+[EXP 3][2026-03-05 00:25:16] O2: 6.40 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-05 00:25:16] O2: 23.50 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [23.69413185119629, 6.174533367156982, 10.450566291809082]
+read_do(): [23.69587516784668, 6.175708770751953, 10.451850891113281]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-05 00:55:16] O2: 6.18 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[CONTROL 2][2026-03-05 00:55:16] O2: 10.45 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-05 00:55:16] O2: 23.69 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [22.274023056030273, 6.3095927238464355, 10.234648704528809]
+read_do(): [22.279062271118164, 6.31024169921875, 10.232043266296387]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-05 01:25:16] O2: 6.31 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[CONTROL 2][2026-03-05 01:25:16] O2: 10.23 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-05 01:25:16] O2: 22.27 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [23.320955276489258, 6.334079742431641, 10.225508689880371]
+read_do(): [23.3294620513916, 6.3335347175598145, 10.227736473083496]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-05 01:55:16] O2: 6.33 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[CONTROL 2][2026-03-05 01:55:16] O2: 10.23 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-05 01:55:16] O2: 23.33 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [23.17909049987793, 6.120755672454834, 10.146453857421875]
+read_do(): [23.195045471191406, 6.1176629066467285, 10.149999618530273]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[CONTROL 2][2026-03-05 02:25:16] O2: 10.15 | Light: 0.0% | Lights off: True
+[EXP 3][2026-03-05 02:25:16] O2: 6.12 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-05 02:25:16] O2: 23.18 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [22.746109008789062, 6.155402660369873, 10.150662422180176]
+[CONTROL 2][2026-03-05 02:55:16] O2: 10.15 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-05 02:55:16] O2: 22.75 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [22.729013442993164, 6.155371189117432, 10.145796775817871]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-05 02:55:16] O2: 6.16 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [22.767749786376953, 6.176489353179932, 10.05379867553711]
+read_do(): [22.758075714111328, 6.183374404907227, 10.049927711486816]
+[CONTROL 2][2026-03-05 03:25:16] O2: 10.05 | Light: 0.0% | Lights off: True
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-05 03:25:16] O2: 6.18 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-05 03:25:16] O2: 22.77 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [23.782869338989258, 6.375592231750488, 9.920577049255371]
+read_do(): [23.78632926940918, 6.37605619430542, 9.917841911315918]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[CONTROL 2][2026-03-05 03:55:16] O2: 9.92 | Light: 0.0% | Lights off: True
+[EXP 3][2026-03-05 03:55:16] O2: 6.38 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-05 03:55:16] O2: 23.78 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [25.142122268676758, 6.858168125152588, 9.845077514648438]
+[CONTROL 2][2026-03-05 04:25:16] O2: 9.85 | Light: 0.0% | Lights off: True
+read_do(): [25.128997802734375, 6.855865478515625, 9.851356506347656]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-05 04:25:16] O2: 6.86 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][2026-03-05 04:25:16] O2: 25.14 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [25.71031379699707, 7.318523406982422, 9.908923149108887]
+[EXP 3][HARDWARE] Setting light to 0.00%
+read_do(): [25.729049682617188, 7.323246955871582, 9.911638259887695]
+[EXP 3][2026-03-05 04:55:16] O2: 7.32 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[CONTROL 2][2026-03-05 04:55:16] O2: 9.91 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-05 04:55:16] O2: 25.73 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [25.304195404052734, 7.186138153076172, 9.800607681274414]
+[CONTROL 2][2026-03-05 05:25:16] O2: 9.80 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+read_do(): [25.302715301513672, 7.189733505249023, 9.795661926269531]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-05 05:25:16] O2: 25.30 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 3][2026-03-05 05:25:16] O2: 7.19 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [25.798053741455078, 7.233227252960205, 9.698969841003418]
+[CONTROL 2][2026-03-05 05:55:16] O2: 9.70 | Light: 0.0% | Lights off: True
+read_do(): [25.791170120239258, 7.231812477111816, 9.701562881469727]
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-05 05:55:16] O2: 7.23 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][2026-03-05 05:55:16] O2: 25.80 | Light: 0.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [23.665075302124023, 7.34360933303833, 9.664874076843262]
+read_do(): [23.665634155273438, 7.342082977294922, 9.667243003845215]
+[EXP 3][HARDWARE] Setting light to 6.27%
+[EXP 3][2026-03-05 06:25:16] O2: 7.34 | Light: 6.3% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-05 06:25:16] O2: 9.66 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 6.14%
+[EXP 2][2026-03-05 06:25:16] O2: 23.67 | Light: 6.1% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [22.217859268188477, 7.4545745849609375, 9.559246063232422]
+[CONTROL 2][2026-03-05 06:55:16] O2: 9.56 | Light: 75.0% | Lights off: False
+read_do(): [22.220428466796875, 7.453662395477295, 9.557283401489258]
+[EXP 3][HARDWARE] Setting light to 4.89%
+[EXP 2][HARDWARE] Setting light to 4.99%
+[EXP 3][2026-03-05 06:55:16] O2: 7.45 | Light: 4.9% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][2026-03-05 06:55:16] O2: 22.22 | Light: 5.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [20.61557960510254, 7.212002277374268, 9.677417755126953]
+[CONTROL 2][HARDWARE] Injecting 2.0 ml nutrients
+read_do(): [20.611413955688477, 7.210110187530518, 9.678834915161133]
+[EXP 3][HARDWARE] Setting light to 5.32%
+[EXP 3][2026-03-05 07:25:16] O2: 7.21 | Light: 5.3% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][HARDWARE] 4ml dispensed - resetting servo 3. Please refill syringe.
+[CONTROL 2][2026-03-05 07:25:16] O2: 9.68 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.88%
+[EXP 2][2026-03-05 07:25:16] O2: 20.62 | Light: 5.9% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [19.892574310302734, 7.082208156585693, 9.848743438720703]
+read_do(): [19.897558212280273, 7.081007480621338, 9.847922325134277]
+[EXP 3][HARDWARE] Setting light to 2.74%
+[CONTROL 2][2026-03-05 07:55:17] O2: 9.85 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-05 07:55:17] O2: 7.08 | Light: 2.7% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.79%
+[EXP 2][2026-03-05 07:55:17] O2: 19.89 | Light: 5.8% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [20.05080223083496, 7.100429534912109, 9.971266746520996]
+read_do(): [20.049724578857422, 7.10005521774292, 9.969579696655273]
+[EXP 3][HARDWARE] Setting light to 4.78%
+[EXP 3][2026-03-05 08:25:17] O2: 7.10 | Light: 4.8% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-05 08:25:17] O2: 9.97 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.14%
+[EXP 2][2026-03-05 08:25:17] O2: 20.05 | Light: 5.1% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [19.65070152282715, 6.969762802124023, 10.150240898132324]
+read_do(): [19.652711868286133, 6.9699201583862305, 10.150858879089355]
+[EXP 3][HARDWARE] Setting light to 5.03%
+[CONTROL 2][2026-03-05 08:55:17] O2: 10.15 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-05 08:55:17] O2: 6.97 | Light: 5.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 6.11%
+[EXP 2][2026-03-05 08:55:17] O2: 19.65 | Light: 6.1% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [19.10003089904785, 6.8528618812561035, 10.299190521240234]
+[EXP 3][HARDWARE] Setting light to 4.67%
+[EXP 3][2026-03-05 09:25:17] O2: 6.85 | Light: 4.7% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-05 09:25:17] O2: 10.30 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.51%
+[EXP 2][2026-03-05 09:25:17] O2: 19.09 | Light: 5.5% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [18.88315773010254, 6.452103137969971, 10.389025688171387]
+[EXP 3][HARDWARE] Setting light to 5.97%
+read_do(): [18.875886917114258, 6.452159881591797, 10.392000198364258]
+[EXP 3][2026-03-05 09:55:17] O2: 6.45 | Light: 6.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-05 09:55:17] O2: 10.39 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.39%
+[EXP 2][2026-03-05 09:55:17] O2: 18.88 | Light: 5.4% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [18.619338989257812, 6.0468220710754395, 10.462264060974121]
+[CONTROL 2][2026-03-05 10:25:17] O2: 10.46 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.64%
+read_do(): [18.61530876159668, 6.047863006591797, 10.461803436279297]
+[EXP 2][2026-03-05 10:25:17] O2: 18.62 | Light: 5.6% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 3][HARDWARE] Setting light to 5.09%
+[EXP 3][2026-03-05 10:25:17] O2: 6.05 | Light: 5.1% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [18.095046997070312, 5.400295734405518, 10.434630393981934]
+[CONTROL 2][2026-03-05 10:55:17] O2: 10.43 | Light: 75.0% | Lights off: False
+read_do(): [18.09577178955078, 5.400049209594727, 10.43274211883545]
+[EXP 3][HARDWARE] Setting light to 3.03%
+[EXP 2][HARDWARE] Setting light to 3.72%
+[EXP 3][2026-03-05 10:55:17] O2: 5.40 | Light: 3.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][2026-03-05 10:55:17] O2: 18.10 | Light: 3.7% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [17.176006317138672, 5.586720943450928, 10.544831275939941]
+read_do(): [17.17880630493164, 5.585046291351318, 10.544377326965332]
+[EXP 3][HARDWARE] Setting light to 5.53%
+[CONTROL 2][2026-03-05 11:25:17] O2: 10.54 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-05 11:25:17] O2: 5.59 | Light: 5.5% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.56%
+[EXP 2][2026-03-05 11:25:17] O2: 17.18 | Light: 5.6% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [16.81614112854004, 5.048897743225098, 10.672958374023438]
+read_do(): [16.8157901763916, 5.050814151763916, 10.674757957458496]
+[EXP 3][HARDWARE] Setting light to 4.72%
+[CONTROL 2][2026-03-05 11:55:17] O2: 10.67 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-05 11:55:17] O2: 5.05 | Light: 4.7% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.50%
+[EXP 2][2026-03-05 11:55:17] O2: 16.82 | Light: 4.5% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [16.038610458374023, 5.087400436401367, 10.603170394897461]
+[EXP 3][HARDWARE] Setting light to 3.35%
+[EXP 3][2026-03-05 12:25:17] O2: 5.09 | Light: 3.4% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [16.04630470275879, 5.0875043869018555, 10.613802909851074]
+[CONTROL 2][2026-03-05 12:25:17] O2: 10.61 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.68%
+[EXP 2][2026-03-05 12:25:17] O2: 16.05 | Light: 4.7% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [15.617701530456543, 4.677753448486328, 10.752333641052246]
+[EXP 3][HARDWARE] Setting light to 4.04%
+read_do(): [15.616931915283203, 4.6780571937561035, 10.755138397216797]
+[EXP 3][2026-03-05 12:55:17] O2: 4.68 | Light: 4.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-05 12:55:17] O2: 10.76 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.22%
+[EXP 2][2026-03-05 12:55:17] O2: 15.62 | Light: 5.2% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [15.109332084655762, 4.586295127868652, 10.768237113952637]
+[EXP 3][HARDWARE] Setting light to 4.05%
+[EXP 3][2026-03-05 13:25:17] O2: 4.59 | Light: 4.1% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [15.107381820678711, 4.586813449859619, 10.767955780029297]
+[CONTROL 2][2026-03-05 13:25:17] O2: 10.77 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 2.26%
+[EXP 2][2026-03-05 13:25:17] O2: 15.11 | Light: 2.3% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [14.62200927734375, 4.312462329864502, 10.802702903747559]
+[EXP 3][HARDWARE] Setting light to 3.84%
+read_do(): [14.623558044433594, 4.312086582183838, 10.805678367614746]
+[EXP 3][2026-03-05 13:55:17] O2: 4.31 | Light: 3.8% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-05 13:55:17] O2: 10.81 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.91%
+[EXP 2][2026-03-05 13:55:17] O2: 14.62 | Light: 5.9% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [14.31347942352295, 4.079147815704346, 10.960953712463379]
+[EXP 3][HARDWARE] Setting light to 5.16%
+[EXP 3][2026-03-05 14:25:17] O2: 4.08 | Light: 5.2% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [14.314033508300781, 4.077800750732422, 10.9611234664917]
+[CONTROL 2][2026-03-05 14:25:17] O2: 10.96 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 3.29%
+[EXP 2][2026-03-05 14:25:17] O2: 14.31 | Light: 3.3% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [13.890612602233887, 3.469891309738159, 11.013014793395996]
+read_do(): [13.889730453491211, 3.4704055786132812, 11.016651153564453]
+[EXP 3][HARDWARE] Setting light to 4.29%
+[EXP 3][2026-03-05 14:55:17] O2: 3.47 | Light: 4.3% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[CONTROL 2][2026-03-05 14:55:17] O2: 11.02 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.16%
+[EXP 2][2026-03-05 14:55:17] O2: 13.89 | Light: 5.2% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [13.561321258544922, 3.2048275470733643, 11.062501907348633]
+[EXP 3][HARDWARE] Setting light to 3.56%
+[EXP 3][2026-03-05 15:25:18] O2: 3.20 | Light: 3.6% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [13.55935001373291, 3.2033398151397705, 11.059279441833496]
+[CONTROL 2][2026-03-05 15:25:18] O2: 11.06 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 3.29%
+[EXP 2][2026-03-05 15:25:18] O2: 13.56 | Light: 3.3% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [13.033858299255371, 3.1228175163269043, 11.172741889953613]
+read_do(): [13.032771110534668, 3.121565103530884, 11.171509742736816]
+[EXP 3][HARDWARE] Setting light to 2.62%
+[CONTROL 2][2026-03-05 15:55:18] O2: 11.17 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-05 15:55:18] O2: 3.12 | Light: 2.6% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.76%
+[EXP 2][2026-03-05 15:55:18] O2: 13.03 | Light: 4.8% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [12.70745849609375, 3.2339866161346436, 11.069389343261719]
+[EXP 3][HARDWARE] Setting light to 4.41%
+] Setting light to 6.11%
+[EXP 2][2026-03-05 08:55:17] O2: 19.65 | Light:[EXP 3][2026-03-05 16:25:18] O2: 3.23 | Light: 4.4% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [12.706764221191406, 3.2341647148132324, 11.07153606414795]
+[CONTROL 2][2026-03-05 16:25:18] O2: 11.07 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 1.71%
+[EXP 2][2026-03-05 16:25:18] O2: 12.71 | Light: 1.7% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [12.564297676086426, 3.4609150886535645, 11.041595458984375]
+read_do(): [12.562090873718262, 3.4605302810668945, 11.039502143859863]
+[EXP 3][HARDWARE] Setting light to 4.16%
+[CONTROL 2][2026-03-05 16:55:18] O2: 11.04 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-05 16:55:18] O2: 3.46 | Light: 4.2% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 3.25%
+[EXP 2][2026-03-05 16:55:18] O2: 12.56 | Light: 3.2% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [12.507950782775879, 3.5355331897735596, 10.956521034240723]
+read_do(): [12.509483337402344, 3.534796953201294, 10.96263313293457]
+[EXP 3][HARDWARE] Setting light to 3.05%
+[CONTROL 2][2026-03-05 17:25:18] O2: 10.96 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-05 17:25:18] O2: 3.53 | Light: 3.0% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.83%
+[EXP 2][2026-03-05 17:25:18] O2: 12.51 | Light: 4.8% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [12.433682441711426, 3.6048805713653564, 11.004977226257324]
+[CONTROL 2][2026-03-05 17:55:18] O2: 11.00 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.57%
+[EXP 2][2026-03-05 17:55:18] O2: 12.43 | Light: 4.6% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [12.432372093200684, 3.605595588684082, 11.00582218170166]
+[EXP 3][HARDWARE] Setting light to 2.47%
+[EXP 3][2026-03-05 17:55:18] O2: 3.61 | Light: 2.5% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [12.173587799072266, 3.461627244949341, 11.151337623596191]
+[EXP 3][HARDWARE] Setting light to 3.59%
+read_do(): [12.176420211791992, 3.462641716003418, 11.151695251464844]
+[EXP 3][HARDWARE] End of day - resetting servo 2. Please refill syringe.
+[CONTROL 2][2026-03-05 18:25:18] O2: 11.15 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 3.63%
+[EXP 2][HARDWARE] End of day - resetting servo 1. Please refill syringe.
+[EXP 3][2026-03-05 18:25:18] O2: 3.46 | Light: 3.6% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][2026-03-05 18:25:18] O2: 12.18 | Light: 3.6% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [11.7289457321167, 3.6783347129821777, 11.062848091125488]
+read_do(): [11.730818748474121, 3.6785635948181152, 11.06134033203125]
+[EXP 3][HARDWARE] Setting light to 2.51%
+[CONTROL 2][2026-03-05 18:55:18] O2: 11.06 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-05 18:55:18] O2: 3.68 | Light: 2.5% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 4.83%
+[EXP 2][2026-03-05 18:55:18] O2: 11.73 | Light: 4.8% | Dispensed: 0.000ml | Budget: 2.00ml | Half-day used: 2.00ml | Lights off: False
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 96           |
+|    ep_rew_mean          | 13.5         |
+| time/                   |              |
+|    fps                  | 0            |
+|    iterations           | 3            |
+|    time_elapsed         | 259216       |
+|    total_timesteps      | 200848       |
+| train/                  |              |
+|    approx_kl            | 0.0013639592 |
+|    clip_fraction        | 0            |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -3.22        |
+|    explained_variance   | 0.03         |
+|    learning_rate        | 0.0001       |
+|    loss                 | 0.00952      |
+|    n_updates            | 795          |
+|    policy_gradient_loss | -0.00254     |
+|    std                  | 1.22         |
+|    value_loss           | 0.452        |
+------------------------------------------
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 96         |
+|    ep_rew_mean          | 13.5       |
+| time/                   |            |
+|    fps                  | 0          |
+|    iterations           | 3          |
+|    time_elapsed         | 259216     |
+|    total_timesteps      | 200848     |
+| train/                  |            |
+|    approx_kl            | 0.01052484 |
+|    clip_fraction        | 0.144      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -3.22      |
+|    explained_variance   | -0.236     |
+|    learning_rate        | 0.0001     |
+|    loss                 | -0.0136    |
+|    n_updates            | 795        |
+|    policy_gradient_loss | -0.0179    |
+|    std                  | 1.22       |
+|    value_loss           | 0.556      |
+----------------------------------------
+read_do(): [11.506267547607422, 3.9977269172668457, 11.1541109085083]
+[EXP 3][HARDWARE] Setting light to 2.92%
+[EXP 3][HARDWARE] Injecting 0.862 ml nutrients
+read_do(): [11.5058012008667, 3.996394395828247, 11.152548789978027]
+[CONTROL 2][HARDWARE] Injecting 2.0 ml nutrients
+[EXP 3][2026-03-05 19:25:19] O2: 4.00 | Light: 2.9% | Dispensed: 0.862ml | Budget: 1.14ml | Half-day used: 0.86ml | Lights off: False
+[CONTROL 2][2026-03-05 19:25:19] O2: 11.15 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 3.82%
+[EXP 2][HARDWARE] Injecting 0.273 ml nutrients
+[EXP 2][2026-03-05 19:25:19] O2: 11.51 | Light: 3.8% | Dispensed: 0.273ml | Budget: 1.73ml | Half-day used: 0.27ml | Lights off: False
+read_do(): [11.504071235656738, 4.477036476135254, 11.25040340423584]
+[CONTROL 2][2026-03-05 19:55:20] O2: 11.25 | Light: 75.0% | Lights off: False
+read_do(): [11.508220672607422, 4.4767327308654785, 11.245613098144531]
+[EXP 2][HARDWARE] Setting light to 3.91%
+[EXP 3][HARDWARE] Setting light to 3.56%
+[EXP 3][2026-03-05 19:55:20] O2: 4.48 | Light: 3.6% | Dispensed: 0.000ml | Budget: 1.14ml | Half-day used: 0.86ml | Lights off: False
+[EXP 2][HARDWARE] Injecting 1.000 ml nutrients
+[EXP 2][2026-03-05 19:55:20] O2: 11.50 | Light: 3.9% | Dispensed: 1.000ml | Budget: 0.73ml | Half-day used: 1.27ml | Lights off: False
+read_do(): [11.25825309753418, 4.557300090789795, 11.215813636779785]
+[CONTROL 2][2026-03-05 20:25:21] O2: 11.22 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 3.21%
+[EXP 2][2026-03-05 20:25:21] O2: 11.26 | Light: 3.2% | Dispensed: 0.000ml | Budget: 0.73ml | Half-day used: 1.27ml | Lights off: False
+read_do(): [11.25562572479248, 4.556699275970459, 11.212849617004395]
+[EXP 3][HARDWARE] Setting light to 3.78%
+[EXP 3][HARDWARE] Injecting 1.000 ml nutrients
+[EXP 3][2026-03-05 20:25:21] O2: 4.56 | Light: 3.8% | Dispensed: 1.000ml | Budget: 0.14ml | Half-day used: 1.86ml | Lights off: False
+read_do(): [11.109458923339844, 4.7255377769470215, 11.214037895202637]
+read_do(): [11.109966278076172, 4.7236647605896, 11.220471382141113]
+[EXP 3][HARDWARE] Setting light to 5.13%
+[EXP 3][HARDWARE] Injecting 0.107 ml nutrients
+[CONTROL 2][2026-03-05 20:55:21] O2: 11.22 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 5.10%
+[EXP 2][2026-03-05 20:55:21] O2: 11.11 | Light: 5.1% | Dispensed: 0.000ml | Budget: 0.73ml | Half-day used: 1.27ml | Lights off: False
+[EXP 3][2026-03-05 20:55:21] O2: 4.73 | Light: 5.1% | Dispensed: 0.107ml | Budget: 0.03ml | Half-day used: 1.97ml | Lights off: False
+read_do(): [10.997851371765137, 4.944400787353516, 11.203346252441406]
+[EXP 3][HARDWARE] Setting light to 5.99%
+[EXP 3][HARDWARE] Injecting 0.031 ml nutrients
+read_do(): [10.995244979858398, 4.943781852722168, 11.198997497558594]
+[CONTROL 2][2026-03-05 21:25:22] O2: 11.20 | Light: 75.0% | Lights off: False
+[EXP 2][HARDWARE] Setting light to 2.86%
+[EXP 2][HARDWARE] Injecting 0.727 ml nutrients
+[EXP 3][2026-03-05 21:25:22] O2: 4.94 | Light: 6.0% | Dispensed: 0.031ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][2026-03-05 21:25:22] O2: 11.00 | Light: 2.9% | Dispensed: 0.727ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [10.85743236541748, 4.656688213348389, 11.389130592346191]
+read_do(): [10.857261657714844, 4.656966209411621, 11.395123481750488]
+[EXP 3][HARDWARE] Setting light to 4.34%
+[CONTROL 2][2026-03-05 21:55:22] O2: 11.39 | Light: 75.0% | Lights off: False
+[EXP 3][2026-03-05 21:55:22] O2: 4.66 | Light: 4.3% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+[EXP 2][HARDWARE] Setting light to 6.03%
+[EXP 2][2026-03-05 21:55:22] O2: 10.86 | Light: 6.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: False
+read_do(): [10.738726615905762, 5.304486274719238, 11.351624488830566]
+read_do(): [10.73999309539795, 5.3053507804870605, 11.339162826538086]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[CONTROL 2][2026-03-05 22:25:22] O2: 11.35 | Light: 0.0% | Lights off: True
+[EXP 3][2026-03-05 22:25:22] O2: 5.31 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-05 22:25:22] O2: 10.74 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [10.667848587036133, 5.896569728851318, 11.555363655090332]
+read_do(): [10.672228813171387, 5.8939666748046875, 11.5801362991333]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-05 22:55:22] O2: 5.90 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[CONTROL 2][2026-03-05 22:55:22] O2: 11.58 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-05 22:55:22] O2: 10.67 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [10.459427833557129, 5.702205657958984, 11.611454963684082]
+[CONTROL 2][2026-03-05 23:25:22] O2: 11.61 | Light: 0.0% | Lights off: True
+read_do(): [10.462325096130371, 5.7015275955200195, 11.603745460510254]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-05 23:25:22] O2: 5.70 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-05 23:25:22] O2: 10.46 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [10.264220237731934, 5.592119216918945, 11.470922470092773]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-05 23:55:22] O2: 5.59 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [10.263145446777344, 5.597012996673584, 11.468633651733398]
+[CONTROL 2][2026-03-05 23:55:22] O2: 11.47 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-05 23:55:22] O2: 10.26 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [10.147598266601562, 5.845692157745361, 11.201284408569336]
+read_do(): [10.145438194274902, 5.84591817855835, 11.204978942871094]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[CONTROL 2][2026-03-06 00:25:22] O2: 11.20 | Light: 0.0% | Lights off: True
+[EXP 3][2026-03-06 00:25:22] O2: 5.85 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-06 00:25:22] O2: 10.15 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [10.01657772064209, 6.308495044708252, 10.942156791687012]
+read_do(): [10.015791893005371, 6.305861473083496, 10.940725326538086]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[CONTROL 2][2026-03-06 00:55:23] O2: 10.94 | Light: 0.0% | Lights off: True
+[EXP 3][2026-03-06 00:55:23] O2: 6.31 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-06 00:55:23] O2: 10.02 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [9.910979270935059, 6.473489284515381, 11.008708953857422]
+read_do(): [9.912374496459961, 6.471088886260986, 11.000126838684082]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[CONTROL 2][2026-03-06 01:25:23] O2: 11.01 | Light: 0.0% | Lights off: True
+[EXP 3][2026-03-06 01:25:23] O2: 6.47 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%
+[EXP 2][2026-03-06 01:25:23] O2: 9.91 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [9.774888038635254, 6.450674057006836, 10.810770034790039]
+[EXP 3][HARDWARE] Setting light to 0.00%
+[EXP 3][2026-03-06 01:55:23] O2: 6.45 | Light: 0.0% | Dispensed: 0.000ml | Budget: 0.00ml | Half-day used: 2.00ml | Lights off: True
+read_do(): [9.78116512298584, 6.445376873016357, 10.831298828125]
+[CONTROL 2][2026-03-06 01:55:23] O2: 10.83 | Light: 0.0% | Lights off: True
+[EXP 2][HARDWARE] Setting light to 0.00%

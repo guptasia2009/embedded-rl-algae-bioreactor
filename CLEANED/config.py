@@ -1,0 +1,46 @@
+# Servo Configuration
+SERVO_PINS = [18, 13, 12]
+SYRINGE_MIN_ML = 3.0
+SYRINGE_MAX_ML = 7.0
+SYRINGE_USABLE_VOLUME = 4.0
+
+# LED Configuration
+TOTAL_LEDS = 60
+LED_GPIO_PIN = 19
+LED_BRIGHTNESS = 128
+
+# LED positions
+REACTOR_1_LEDS = [25, 26, 27]
+REACTOR_2_LEDS = [32, 33, 34]
+REACTOR_3_LEDS = [38, 39, 40]
+
+# Biological Constants
+MU_MAX = 0.06
+KS = 0.5
+KI = 100.0
+K_LIGHT = 0.01
+K_DECAY = 0.004
+REACTOR_DEPTH = 0.2
+Q_MIN = 0.05
+
+X_INIT = 1.0
+S_INIT = 0.0
+I_INIT = 60.0
+
+DO_YIELD = 1.0
+
+# State estimation
+DO_HISTORY_LENGTH = 10
+BIOMASS_DECAY_RATE = 0.999
+
+# RL model
+MODEL_PATH = "bioreactor_model.zip"
+TRAINING_TIMESTEPS = 300_000
+LEARNING_RATE = 3e-4
+GAMMA = 0.99
+
+STATE_LOW = [0.0, 0.0, -2.0, 0.0]
+STATE_HIGH = [20.0, 20.0, 2.0, 255.0]
+
+ACTION_LOW = [-1.0, -1.0]
+ACTION_HIGH = [1.0, 1.0]

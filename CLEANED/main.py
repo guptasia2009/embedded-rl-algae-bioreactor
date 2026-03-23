@@ -1,3 +1,4 @@
+# RUNNING RL
 # Use the following commands to run the file
 # sudo /home/siagupta/projects/IR/embeded-rl-algae-bioreactor/venv/bin/python main.py
 # nohup bash -c 'echo -e "1,2\n1\n1\n3" | sudo /home/siagupta/projects/IR/embeded-rl-algae-bioreactor/venv/bin/python main.py' > main_output.log 2>&1 &

@@ -1,3 +1,4 @@
+# LED CONTROLLER
 # Note: must run command as sudo
 from rpi_ws281x import PixelStrip, Color
 from logger import log

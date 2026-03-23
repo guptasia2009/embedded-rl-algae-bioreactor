@@ -1,3 +1,4 @@
+# STATIC CONTROLLER
 # sudo /home/siagupta/projects/IR/embeded-rl-algae-bioreactor/venv/bin/python static_controller.py
 import os
 import csv

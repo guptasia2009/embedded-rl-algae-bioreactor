@@ -1,3 +1,4 @@
+# CONFIG
 # Servo Configuration
 SERVO_PINS = [18, 13, 12]
 SYRINGE_MIN_ML = 3.0
